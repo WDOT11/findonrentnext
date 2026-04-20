@@ -1,0 +1,246 @@
+.roh_hero_wrap {
+    position: relative;
+}
+
+
+.roh_hero_section {
+    background-image: url('/images/homepg/bg-img-3.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.roh_hero_container {
+    width: 100%;
+    max-width: 1320px;
+    padding: clamp(90px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+}
+
+.roh_hero_content {
+    max-width: 1000px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.roh_pLarge {
+    font-size: 18px;
+    color: #374151;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* FAQs  */
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.roh_faqs_wrapper {
+    padding: 96px 20px;
+    font-family: "DM Sans", sans-serif;
+    background-color: #FFF8F6;
+}
+
+.roh_faqs_content {
+    max-width: 1000px;
+    margin: 0px auto 0;
+    position: relative;
+    z-index: 10;
+}
+
+.roh_faqs_contentInner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 24px;
+}
+
+/* .roh_faq_section {} */
+
+.roh_faq_section_title {
+    margin-bottom: clamp(20px, 3vw, 32px);
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.roh_faq_question {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.roh_faq_icon {
+    color: #ff3600;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.roh_faq_number {
+    width: 32px;
+    height: 32px;
+    background: #f6f9ff;
+    color: #ff3600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.roh_faq_answer {
+    padding-left: 45px;
+}
+
+.roh_faq_answer p {
+    font-size: 16px;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.roh_faq_item {
+    background: #fff;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.roh_faq_item ul li {
+    margin-bottom: 8px;
+}
+
+.roh_faq_item ul li::marker {
+    color: #ff3600;
+    font-size: 1.2em;
+}
+
+.roh_contact_box {
+    background: #111827;
+    border-radius: 24px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.roh_contact_links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.roh_ctaBtn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .3s ease;
+}
+
+.roh_ctaBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.roh_faq_item a {
+    color: #111827;
+    text-decoration: underline;
+}
+.roh_faq_item a:hover {
+    color: #ff3600;
+    text-decoration: underline;
+}
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #6b7280;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+    .roh_faqs_content {
+        padding: 0 0px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .roh_faq_item {
+        margin-bottom: 15px;
+        padding: 20px;
+        
+    }
+    .roh_pLarge {
+        font-size: 16px;
+    }
+
+    .roh_faqs_wrapper {
+        padding: 30px 10px;
+    }
+
+    .roh_why_sectionWrapper {
+        padding: 48px 15px;
+    }
+
+    .roh_faqs_contentInner {
+        gap: 20px;
+    }
+
+    .roh_contact_box {
+        padding: 40px 20px;
+        margin-top: 0;
+    }
+    .roh_ctaBtn {
+        padding: 10px 20px;
+        font-size: 14px;
+        gap: 8px;
+    }
+    .roh_contact_links {
+        gap: 16px;
+    }
+
+}

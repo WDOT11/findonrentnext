@@ -1,0 +1,462 @@
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.roh_header_area {
+  position: absolute;
+  width: 100%;
+  top: 1px;
+  z-index: 1;
+}
+
+.roh_logo_block img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  transition: all 0.3s;
+}
+
+:global(.roh_scrolled_header_sticky) .roh_logo_block img {
+  max-width: 80px;
+}
+
+.roh_is_sticky {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 444;
+  background: #fff;
+  transition: all 0.4s;
+  animation: fadeInDown 0.5s ease-in-out;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+}
+
+.roh_is_sticky:global(.roh_scrolled_header_sticky) {
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 8px;
+  padding: 0 10px;
+}
+
+:global(.roh_scrolled_header_sticky) .roh_header_block {
+  background-color: #fffffff7;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  border-radius: 50px;
+  padding: 10px 40px;
+}
+
+.roh_header_block {
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 10px 40px;
+}
+
+
+header .roh_navBar .roh_navLink {
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 10px 10px 10px 10px;
+  transition: all .4s ease;
+}
+.roh_active {
+  color: #ff4d4f !important;
+  font-weight: 600;
+}
+
+header .roh_navBar .roh_navLink:hover,
+header .roh_navBar .roh_navLink:focus-within,
+header .roh_navBar .roh_navLink.dropdown_toggle.show {
+  color: #FF3600;
+  text-decoration: none;
+}
+
+.dropdown_toggle:hover,
+.dropdown_toggle:focus {
+  color: #ff4500 !important;
+  text-decoration: none;
+}
+
+.roh_navLink.dropdown_toggle::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.roh_navBar .roh_dropdown_menu {
+  background-color: #fff;
+  border-style: none;
+  border-radius: 0px 0px 20px 20px;
+  min-width: 220px;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+}
+
+.roh_navBar .roh_dropdown_menu .roh_dropdown_item.roh_active  {
+  color: #ff3d00;
+  background-color: #f7f7f7;
+}
+.roh_navBar .roh_dropdown:hover .roh_dropdown_menu {
+  display: block;
+  z-index: 999;
+}
+
+header .roh_navBar .roh_dropdown_menu a.roh_dropdown_item {
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7em;
+  padding: 8px 20px 8px 20px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ececec66;
+}
+
+header .roh_navBar .roh_dropdown_menu a.roh_dropdown_item:hover {
+  color: #ff3d00;
+  background-color: #f7f7f7;
+  text-decoration: none;
+}
+
+.roh_headerRight_button {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.roh_profile_box button {
+  background-color: #FF3600;
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all .3s ease-in-out;
+}
+.roh_profile_box :global(.dropdown-toggle)::after {
+display:none !important;
+}
+
+.dropdownmob_menu.show {
+  display: block;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.roh_profile_box button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.roh_profile_box button:hover {
+  background-color: #000;
+}
+
+.roh_adrop_box_wrap .roh_adrop_list li a {
+  padding: 10px 15px;
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.roh_adrop_box_wrap .roh_adrop_list li {
+  list-style: none;
+}
+
+.roh_adrop_box_wrap .roh_adrop_list {
+  margin: 0;
+  padding: 0;
+}
+
+.roh_adrop_box_wrap .roh_adrop_list li a:hover {
+  background-color: #EDEDED;
+  color: #000;
+}
+
+.roh_mobileMenu {
+  position: relative;
+}
+
+
+/* Offcanvas */
+.roh_offcanvas_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roh_offcanvas_body {
+  padding: 0;
+}
+
+/* Menu */
+.roh_navBar {
+  width: 100%;
+}
+
+.roh_navLink {
+  display: block;
+  padding: 7px 10px !important;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Dropdown Structure */
+/* .roh_hasDropdown {
+  border-bottom: 1px solid #eee;
+} */
+
+.roh_menuRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roh_menuArrow {
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow */
+.roh_active .roh_menuArrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.roh_dropdownMenu {
+  display: none;
+  margin: 10px;
+  background: #ffff;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.roh_active .roh_dropdownMenu {
+  display: block;
+}
+
+.roh_dropdownMenu li {
+  list-style: none;
+  text-align: left;
+}
+
+.roh_dropdownMenu a {
+  display: block;
+  padding: 6px 20px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #ececec66;
+  text-decoration: none;
+  text-align: left !important;
+}
+.roh_dropdownMenu a:hover, .roh_dropdownMenu .roh_active {
+  background-color: #f7f7f7;
+  color: #FF3600;
+  text-decoration: none;
+}
+.roh_custom_mobileMenuBtn {
+  display: none;
+}
+
+.roh_loginBtn {
+  background-color: #FFF;
+  color: #000;
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all .4s ease-in-out;
+  text-decoration: none;
+  padding: 9px 25px 9px 25px;
+  border-radius: 50px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+
+}
+.roh_loginBtn:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.roh_redBtn {
+  background-color: #000 !important;
+  color: #fff;
+  text-decoration: none;
+
+
+}
+.roh_redBtn:hover {
+  background-color: #FF3600 !important;
+  color: #fff;
+  text-decoration: none;
+}
+.roh_header_area .roh_header_nav ul li a font:not(.roh_offcanvas_body .roh_navBar a font) {
+  font-size: 12px;
+}
+.roh_headerRight_button a font {
+  font-size: 12px;
+}
+.roh_navBar:has(font):not(.roh_offcanvas_body .roh_navBar) {
+  display: flex;
+  justify-content: flex-start !important;
+  gap: 10px;
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+
+  header .roh_navBar .roh_navLink {
+    font-size: 14px;
+  }
+  .roh_redBtn {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+  }
+  .roh_loginBtn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .roh_loginBtn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .roh_desktop_headerNav {
+    display: none;
+  }
+
+  .roh_header_block {
+    width: 100%;
+    max-width: 991px;
+  }
+
+  .roh_navbarNav {
+    display: none;
+  }
+
+  .roh_custom_mobileMenuBtn {
+    display: block;
+  }
+
+  .roh_header_nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .roh_custom_mobileMenuBtn {
+    display: block;
+  }
+
+  .roh_navBar .roh_dropdown_menu {
+    min-width: 100%;
+  }
+
+  .roh_profile_box button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .roh_header_block,
+  :global(.roh_scrolled_header_sticky) .roh_header_block {
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 620px) {
+  .roh_headerRight_button {
+  flex-wrap: wrap;
+}
+
+}
+@media (max-width: 575px) {
+  .roh_navbarNav {
+    width: 100%;
+  }
+
+  .roh_header_block {
+    padding: 10px 20px;
+  }
+
+  :global(.roh_scrolled_header_sticky) .roh_header_block {
+    padding: 10px 20px;
+  }
+
+  .roh_is_sticky:global(.roh_scrolled_header_sticky) {
+    margin-top: 4px;
+  }
+   .roh_headerRight_button .roh_redBtn, .roh_loginBtn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+.roh_header_area .roh_headerRight_button a font:not(.roh_offcanvas_body .roh_navBar a font) {
+  font-size: 8px;
+}
+}
+
+@media (max-width: 375px) and (min-width: 320px) {
+  .roh_headerRight_button {
+    gap: 6px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .roh_logo_block img {
+    width: 100%;
+    max-width: 65px;
+    transition: all 0.3s;
+  }
+
+  :global(.roh_scrolled_header_sticky) .roh_logo_block img {
+    max-width: 50px;
+  }
+
+  .roh_profile_box button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .roh_loginBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+}

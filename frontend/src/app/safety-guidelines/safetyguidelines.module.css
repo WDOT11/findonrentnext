@@ -1,0 +1,372 @@
+.roh_hero_wrap {
+    position: relative;
+}
+
+
+.roh_hero_section {
+    background-image: url('/images/homepg/bg-img-3.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.roh_hero_container {
+    width: 100%;
+    max-width: 1320px;
+    padding: clamp(90px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+}
+
+.roh_hero_content {
+    max-width: 1000px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.roh_pLarge {
+    font-size: 18px;
+    color: #374151;
+    max-width: 600px;
+    margin: auto;
+}
+
+.roh_features_wrapper {
+    font-family: "DM Sans", sans-serif;
+    background-color: #FFF8F6;
+    padding: 96px 20px;
+}
+
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.roh_general_guidelines_card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #FED7AA;
+    background: #FFFBF5;
+    border-radius: 20px;
+    padding: 32px;
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.roh_card_list {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    flex: 1;
+}
+
+.roh_card_list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.5;
+    align-items: center;
+}
+
+.roh_grid_features_wrapper {
+    margin: auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.roh_grid_features_wrapper2 {
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px 60px;
+}
+
+.roh_grid_features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.roh_feature_card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 32px;
+    text-align: start;
+    transition: all .3s ease;
+}
+
+.roh_feature_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.08);
+}
+
+.roh_feature_icon {
+    width: 56px;
+    height: 56px;
+    background: #f6f9ff;
+    color: #ff3600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.roh_feature_subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff3600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.roh_feature_title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #111827;
+}
+
+.roh_feature_desc {
+    font-size: 15px;
+    color: #4B5563;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.roh_feature_list {
+    list-style: none;
+    padding: 0;
+}
+
+.roh_feature_list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.roh_highlight_box {
+    background: #FFF0F5;
+    border-radius: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.roh_highlight_content2 {
+    border-left: 1px solid #E5E7EB;
+    padding-left: 40px;
+}
+
+.roh_highlight_box .roh_card_list li {
+    color: #212529;
+}
+
+.roh_growth_wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0px auto 10px;
+}
+
+.roh_cta_icon {
+    width: 64px;
+    height: 64px;
+    background: #ffffff1a;
+    color: #ff3600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.roh_checkList {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.roh_cta_section {
+    background: #111827;
+    border-radius: 24px;
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.roh_cta_content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.roh_cta_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.roh_cta_buttons a {
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.roh_cta_buttons .roh_redBtn {
+    background-color: #ff3600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.roh_cta_buttons .roh_redBtn:hover {
+    background: #e03e00;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.roh_cta_buttons .roh_blackBtn {
+    background-color: #374151;
+    color: #fff;
+}
+
+.roh_cta_buttons .roh_blackBtn:hover {
+    background-color: #fff3;
+    color: #fff;
+}
+
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #6b7280;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.roh_features_wrapper a {
+    color: #212529;
+    text-decoration: underline;
+}
+
+.roh_features_wrapper a:hover {
+    color: #ff3600;
+    text-decoration: underline;
+}
+@media screen and (max-width:767px) {
+    .roh_pLarge {
+        font-size: 16px;
+    }
+
+    .roh_features_wrapper {
+        padding: 30px 10px;
+    }
+
+    .roh_grid_features_wrapper2 {
+        padding: 0px 0px 30px;
+    }
+
+    .roh_grid_features_wrapper {
+        padding: 30px 0px;
+    }
+
+    .roh_feature_card {
+        padding: 24px;
+
+    }
+
+    .roh_grid_features {
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .roh_highlight_box {
+        padding: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .roh_highlight_content2 {
+        border-top: 1px solid #E5E7EB;
+        border-left: none;
+        padding-top: 28px;
+        padding-left: 0px;
+    }
+
+    .roh_checkList {
+        gap: 10px;
+    }
+
+    .roh_cta_section {
+        padding: 40px 20px;
+        margin-top: 30px;
+    }
+
+    .roh_cta_buttons a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

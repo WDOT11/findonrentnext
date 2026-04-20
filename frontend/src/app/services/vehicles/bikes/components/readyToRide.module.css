@@ -1,0 +1,101 @@
+.roh_singlePost_wrap {
+    background-color: #fff;
+    padding: 96px 20px;
+}
+
+.roh_singlePost_black_bg {
+    background-color: #000;
+    border-radius: 32px;
+}
+.roh_singlePost_main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+}
+.roh_singlePost_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100%;
+}
+.roh_second_heading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.roh_singlePost_desc {
+    max-width: 65%;
+}
+.roh_singlePost_imgwrap img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* button  cc*/
+.roh_top_btns .roh_circl_btn button, .roh_top_btns .roh_button_custom button {
+    background: #FF3600;
+    color: #fff;
+}
+.roh_button_custom button, .roh_extrabtn button {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items:    center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .4s ease-in-out;
+}
+.roh_circl_btn button, .roh_single_pageCircle button {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+.roh_circl_btn button img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+.roh_top_btns .roh_button_custom:hover~.roh_circl_btn button, .roh_top_btns .roh_circl_btn button:hover
+{
+    background: #000;
+    color: #fff;
+}
+
+
+@media (max-width: 991px) {
+    .roh_singlePost_main {
+        padding: 80px 25px;
+    }
+    .roh_global_padding {
+        padding: 20px;
+    }
+    .roh_second_heading {
+        font-size: 22px;
+        margin-bottom: 10px;
+
+}
+}
+
+@media (max-width: 767px) {
+.roh_singlePost_wrap {
+    padding: 48px 15px;
+}
+}

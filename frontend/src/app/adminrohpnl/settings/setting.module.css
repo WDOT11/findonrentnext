@@ -1,0 +1,114 @@
+.rohsite_wrap {
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.rohsite_title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.rohsite_card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.rohsite_block {
+  margin-bottom: 24px;
+}
+
+.rohsite_block_title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.rohsite_help {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.rohsite_radio_group {
+  display: flex;
+  gap: 20px;
+}
+
+.rohsite_radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.rohsite_divider {
+  margin: 24px 0;
+}
+
+.rohsite_row {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rohsite_input,
+.rohsite_textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.rohsite_textarea {
+  resize: vertical;
+  min-height: 38px;
+}
+
+.rohsite_add_btn {
+  margin-top: 10px;
+  border: 1px dashed #2563eb;
+  background: transparent;
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.rohsite_remove_btn {
+  border: 1px solid #dc2626;
+  background: transparent;
+  color: #dc2626;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.rohsite_submit_btn {
+  margin-top: 20px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.rohsite_submit_btn:disabled {
+  opacity: 0.6;
+}
+
+.rohsite_error {
+  margin-top: 12px;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.rohsite_success {
+  margin-top: 12px;
+  color: #15803d;
+  font-size: 14px;
+}

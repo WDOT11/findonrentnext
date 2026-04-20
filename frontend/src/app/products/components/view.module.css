@@ -1,0 +1,1241 @@
+.modalOverlay {
+  position: fixed;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modalOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* CLOSE */
+/* .closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+} */
+/* .closeBtn {
+  position: fixed;
+  top: 22px;
+  right: 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  width: max-content;
+  height: auto;
+  line-height: 1em;
+  text-align: center;
+  transition: background 0.2s;
+  z-index: 99;
+} */
+
+.closeBtn:hover {
+  background: #606060;
+  color: #fff;
+}
+
+.itemWrap {
+  text-align: left;
+}
+
+.itemTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.imageWrap {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 18px;
+}
+
+.itemImg {
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px;
+  margin-bottom: 20px;
+}
+
+.extraInfo {
+  margin-top: 14px;
+}
+
+.extraInfo h4 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Skeleton Loader */
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.skelTitle {
+  width: 60%;
+  height: 20px;
+  background: #eee;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite;
+}
+
+.skelImage {
+  width: 100%;
+  height: 160px;
+  background: #eee;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+.skelLines {
+  width: 80%;
+  height: 14px;
+  background: #eee;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f0f0f0;
+  }
+
+  50% {
+    background-color: #e0e0e0;
+  }
+
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+/*----------------------- R_R Pop CSS---------------------- */
+
+.roh_prouct_hero_wrap {
+  margin-top: 50px;
+}
+
+.roh_prouct_hero_inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96%;
+}
+
+.roh_prouct_hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 46px 46px 46px 46px;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.roh_prouct_hero::before {
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  content: '';
+  background-image: linear-gradient(180deg, #00000080 13.62%, #00000080 68.99%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 46px 46px 46px 46px;
+}
+
+.roh_service_banner {
+  margin-block: 80px;
+}
+
+.roh_Zindex {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+.roh_hero_heading h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  color: #fff;
+  text-align: center;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+.roh_hero_heading .itemDesc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+/* ---------------Pop Up inner Css ----------- */
+
+.roh_left_slide_wrap {
+  position: sticky;
+  z-index: 9;
+  top: 45px;
+}
+
+.roh_left_slide_inner {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #cccccc00;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.priceMuted {
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 600;
+  color: #000;
+}
+.roh_sidebar_pricing h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+}
+
+.roh_sidebar_pricing h2 span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.roh_fleets_single_sidebar_list {
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.roh_feets_data_list span,
+.roh_content_layer span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+
+.roh_content_layer:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.roh_feets_data_list img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.roh_productPrice {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px dashed #9CA3AF;
+  display: none;
+}
+
+.roh_productPrice .roh_content_layer {
+  margin-bottom: 0px;
+}
+
+.roh_providerName {
+  margin-bottom: 10px;
+}
+
+.roh_providerName h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_providerName span {
+  font-weight: 400;
+}
+
+/*---------------------POP-up Right Inner Content CSS----------------------  */
+.roh_about_list_wrap {
+  margin-top: 60px;
+}
+
+.roh_about_media_list {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.roh_vendor_info {
+  background-color: #F9FAFB;
+}
+
+.roh_about_media_list li {
+  list-style: none;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.roh_back_circle {
+  position: relative;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background: #F3F4F6;
+    color: #0B0B0B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* .roh_back_circle img {
+  width: 60px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+} */
+/*
+.roh_back_circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF3600;
+  opacity: 5%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+  transition: all 0.4s ease-in-out;
+} */
+
+.roh_about_media_list li:hover .roh_back_circle::before {
+  opacity: 10%;
+}
+
+.roh_about_media_list li .roh_media {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.roh_media_title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #212529;
+}
+.roh_media p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #6B7280;
+}
+
+.roh_general_info_wrap {
+  /* padding-block: clamp(30px,  4vw,  60px); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roh_check_list {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  column-gap: 50px;
+}
+
+.roh_check_list li {
+  list-style: none;
+}
+
+.roh_check_list li .roh_featureList img {
+  width: 28px;
+  height: 28px;
+}
+
+.roh_featureList,
+.roh_premiumFeaturelist {
+  text-decoration: none;
+  padding: 0px 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.roh_featureList h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.roh_featureList span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.roh_general_info_twowrap {
+  padding-bottom: 30px;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roh_check_list.roh_new_checklist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.roh_premiumFeaturelist span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.roh_premiumFeaturelist img {
+  width: 35px;
+  height: 35px;
+}
+
+.roh_policy_terms h4 button {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+
+}
+
+.roh_policy_terms h4 button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+
+/*--------- Images Slider------- */
+/* 
+.roh_policy_terms :global(.accordion-button:not(.collapsed)) {
+  background: #FF3600;
+  box-shadow: none;
+  outline: none;
+  color: #ffff;
+}
+
+.roh_policy_terms .roh_accordion_button:global(.collapsed::after) {
+  filter: brightness(0) !important;
+}
+
+.roh_policy_terms :global(.accordion-button:not(.collapsed)::after) {
+  filter: brightness(100);
+}
+
+.roh_policy_terms .roh_accordion_button:not(.collapsed)::after {
+  filter: brightness(100);
+}
+
+.roh_policy_terms h4 button {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+
+}
+
+.roh_policy_terms h4 button:focus:not(:focus-visible) {
+  box-shadow: none;
+} */
+ .roh_policy_terms :global(.accordion-button) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(14px, 1vw, 16px);
+    line-height: 1.5em;
+    color: #212529;
+    background: none;
+    position: relative;
+    padding: 0;
+    box-shadow: none !important;
+    transition: all .2s ease-in-out;
+    border: none;
+    align-items: center;
+}
+.roh_policy_terms :global(.accordion-button)::after {
+  background-size: 14px !important;
+}
+.roh_policy_terms :global(.accordion-item) {
+  background-color: #F3F4F6 !important;
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+.roh_policy_terms .accordion_button .number {
+    margin-right: 15px;
+}
+
+.roh_policy_terms :global(.accordion-item .accordion-body) {
+padding: 10px 0 0 0;
+}
+.roh_policy_terms :global(.accordion-item .accordion-body) p {
+  margin-bottom: 0;
+}
+.accordion_button.collapsed::after {
+  background-color: #f6f9ff;
+}
+
+
+/* === SLIDER WRAPPER === */
+.roh_slider_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  /* so image edges are visible */
+}
+
+/* === TRACK === */
+.roh_slider_track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* === EACH SLIDE === */
+.roh_slide {
+  flex: 0 0 80%;
+  /* 80% width → 10% edges visible */
+  margin: 0 10px;
+}
+
+.roh_slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  background-color: #f1f1f1;
+}
+
+/* === CONTROLS BELOW === */
+.roh_slider_controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.navBtn {
+  background: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.rotateLeft {
+  transform: rotate(180deg);
+}
+.navBtn:hover {
+  background: #FF3600;
+}
+.roh_vendorLink_heading {
+  text-decoration: none;
+  color: #000;
+}
+.roh_vendorLink_heading:hover {
+  color: #7a7a7a;
+}
+
+/* OVERLAY */
+.modalOverlay {
+  position: fixed;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* MODAL */
+.modalContent {
+  background: #fff;
+  width: 100%;
+  max-width: 1024px;
+  height: clamp(420px, 95vh, 818px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* CLOSE */
+.closeBtn {
+  background: #F3F4F6;
+  color: #6B7280;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.roh_popupInner {
+overflow: auto;
+  height: 100%;
+  max-height: 850px;
+  min-height: 680px;
+}
+/* LAYOUT */
+.popupContainer {
+  display: flex;
+  gap: 0px;
+}
+
+/* LEFT */
+.leftSection {
+  flex: 1.3;
+}
+
+.mainImageWrap {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.mainImage {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+}
+
+/* THUMB */
+.thumbRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumb {
+  width: clamp(80px, 8vw, 100px);
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.activeThumb {
+  border: 2px solid #ff5a00;
+}
+
+/* RIGHT */
+.rightSection {
+  flex: 1;
+  background: #ffff;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* PRICE */
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff5a00;
+}
+
+.price span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* TEXT */
+.muted {
+  color: #888;
+}
+
+.available {
+  color: #10b981;
+  margin-top: 6px;
+}
+
+/* CARDS */
+.card {
+  margin-top: 12px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.label {
+  font-size: 12px;
+  color: #888;
+}
+
+/* BUTTONS */
+.btnWrap {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.greenBtn {
+  background: #2e8b57;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.primaryBtn {
+  background: #ff5a00;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.roh_other_details {
+  margin-top: 20px;
+}
+.roh_other_details .roh_media {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.roh_other_details .roh_back_circle{
+    position: relative;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #F3F4F6;
+    color: #0B0B0B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.accordionWrap {
+  margin-top: 10px;
+}
+
+/* ITEM */
+.accordionItem {
+  border-top: 1px solid #eee;
+  background-color: #F3F4F6;
+  padding: 15px;
+  border-radius: 16px;
+}
+.accordionItem span{
+  font-size: 15px;
+  font-weight: 600;
+}
+/* HEADER */
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+/* BODY */
+.accordionBody {
+  padding: 10px 0 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.roh_vendor_view_profileBtn {
+  background-color: transparent;
+  color: #0B0B0B;
+  border: none;
+  padding: 8px 0px;
+  text-decoration: underline;
+  font-weight: 600;
+  display: block;
+  text-align: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.roh_vendor_view_profileBtn:hover {
+  background-color: transparent;
+  color: #ff3600;
+  text-decoration: underline;
+}
+.roh_btnGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.roh_btnGroup .roh_contactBtn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding:10px clamp( 15px, 3vw, 45px);
+  border-radius: 8px;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+.roh_btnGroup .roh_contactBtn:hover {
+  background-color: #3d3736;
+  color: #fff;
+  text-decoration: none;
+}
+.roh_whatsappBtn {
+  width: 100%;
+}
+.roh_btnGroup .roh_whatsappBtn a {
+  background-color: #25D366;
+  color: #fff;
+  border: 1px solid #25D366;
+  padding:10px clamp( 15px, 3vw, 45px);
+  border-radius: 8px;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+.roh_btnGroup .roh_whatsappBtn a:hover {
+  background-color: #00b97c;
+  color: #fff;
+  border: 1px solid #00b97c;
+  text-decoration: none;
+}
+.roh_pop_header {
+  background-color: #fff;
+  top: 0px;
+  z-index: 100;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 0 0;
+}
+.roh_pop_title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.roh_item_availability {
+  background-color: #ff3600;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  gap: 6px;
+}
+.roh_items_name {
+  margin-bottom: 15px;
+}
+.roh_sidebar_pricing {
+  background-color: #F8FAFC;
+  border: 1px solid #F1F5F9;
+  border-radius: 16px;
+  padding: 15px;
+}
+.roh_booking_guied_info {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.roh_booking_guied_info .roh_content_layer span {
+ font-size: 14px;
+ line-height: 1.3em;
+}
+.roh_booking_guied_info .roh_content_layer .roh_icon_wrap {
+  background-color: #535966;
+  color: #fff;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 100px;
+}
+.popupContainer .leftSection {
+  background-color: #F3F4F6;
+  padding: 20px;
+  height: max-content;
+} 
+.roh_items_other_info {
+  margin-top: clamp(25px, 3vw, 48px);
+}
+.roh_items_other_info_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(100px, 8vw, 120px), 1fr));
+  gap: 10px;
+  
+}
+.roh_items_other_info .roh_info_box {
+  background-color: #F3F4F6;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.roh_actions_wrap {
+      background-color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    bottom: 40px;
+    z-index: 99;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+.roh_booking_guied_info .roh_number_list {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.roh_booking_guied_info .roh_number_list  li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+/*---------------- Responsive CSS -------- */
+@media (min-width: 768px) and (max-width: 1040px) {
+
+  .modalContent {
+    max-width: calc(100% - 30px);
+  }
+}
+@media (max-width: 991px) {
+  .roh_container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .roh_prouct_hero {
+    padding-top: 50px;
+  }
+
+  .roh_hero_heading h1 {
+    font-size: 30px;
+  }
+
+  /* .roh_back_circle img {
+    width: 30px;
+    height: auto;
+  } */
+
+  .roh_check_list li .roh_featureList img,
+  .roh_premiumFeaturelist img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .roh_premiumFeaturelist span,
+  .roh_featureList h6 {
+    font-size: 14px;
+  }
+  .roh_left_slide_inner {
+  padding: 1rem;
+  border-radius: 20px;
+}
+.roh_sidebar_pricing h2 {
+        font-size: 26px;
+    }
+    .roh_sidebar_pricing {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .roh_productPrice {
+      padding: 10px;
+    }
+    .roh_content_layer {
+      margin-bottom: 8px;
+    }
+    .roh_fleets_single_sidebar_list {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .roh_left_slide_wrap {
+  margin-bottom: 25px !important;}
+
+}
+
+@media screen and (max-width: 768px) {
+   .popupContainer {
+    flex-direction: column;
+  }
+
+  .mainImage {
+    height: 200px;
+  }
+  .roh_sidebar_pricing h2 {
+    font-size: 35px;
+  }
+
+  .roh_service_banner {
+    margin-block: 24px;
+  }
+
+  .roh_button_custom button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .roh_circl_btn button img,
+  .roh_icon a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* .roh_back_circle {
+    width: 45px;
+  } */
+
+  .roh_check_list.roh_new_checklist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roh_policy_terms h4 button {
+    font-size: 16px;
+  }
+
+  /* Slider */
+  .roh_slide {
+    flex: 0 0 90%;
+    margin: 0 5px;
+  }
+
+  .roh_slide img {
+    max-height: 250px;
+  }
+
+  .navBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+ .modalContent {
+    height: 100vh;
+    border-radius: 0;
+  }
+.roh_slider_container{
+  margin-top: 20px;
+}
+.roh_actions_wrap  {
+  bottom: 0px;
+}
+
+.roh_left_slide_wrap {
+  margin-bottom: 24px !important;}
+  .roh_about_media_list {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.roh_left_slide_inner {
+  padding: 1rem;
+  border-radius: 20px;
+}
+.roh_sidebar_pricing h2 {
+        font-size: 26px;
+    }
+    .roh_sidebar_pricing {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .roh_productPrice {
+      padding: 10px;
+    }
+    .roh_content_layer {
+      margin-bottom: 8px;
+    }
+    .roh_fleets_single_sidebar_list {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    /* .roh_media_title {
+      font-size: 16px;
+    } */
+    .roh_vendor_info p {
+      font-size: 14px;
+    }
+    /* .roh_back_circle::before {
+      top: 4px;
+      width: 40px;
+     height: 40px;
+    } */
+    /* .roh_back_circle {
+        width: 35px;
+        height: 35px;
+    }
+    .roh_back_circle img {
+        width: 20px;
+        height: auto;
+    } */
+    .roh_check_list {
+  column-gap: 30px;
+  gap: 10px;
+}
+.roh_featureList,
+.roh_premiumFeaturelist {
+  padding: 0px 0 10px;
+}
+.roh_about_media_list li .roh_media {
+  gap: 10px;}
+.roh_actions_wrap {
+  position: sticky;
+  bottom: -2px;
+}
+.roh_popupInner {
+  padding-bottom: 120px;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .roh_left_slide_wrap {
+    margin-bottom: 10px !important;
+  }
+.roh_about_list_wrap {
+  margin-top: 32px;
+}
+}
+@media screen and (max-width: 450px) {
+  .roh_btnGroup {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

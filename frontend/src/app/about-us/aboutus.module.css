@@ -1,0 +1,250 @@
+.roh_hero_wrap {
+    position: relative;
+    content-visibility: auto;
+
+}
+
+/* 
+.roh_hero_section {
+    background-image: url('/images/homepg/bg-img-3.svg');
+    background-position: center;
+    background-size: cover;
+} */
+
+.roh_hero_container {
+    width: 100%;
+    max-width: 1320px;
+    padding: clamp(80px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+}
+
+.roh_hero_content {
+    max-width: 800px;
+    margin-inline: auto;
+    text-align: center;
+    contain: layout style paint;
+}
+
+.roh_hero_content h1{
+  line-height:1.2;
+}
+
+.roh_pLarge {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 8px;
+    line-height:1.6;
+}
+
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.roh_our_mission_wrap,
+.roh_why_we_started_wrap,
+.roh_our_vision_wrap {
+    padding: 96px 20px;
+    background-color: #fff;
+
+}
+
+/* What We Do */
+.roh_what_we_do_wrap {
+    padding: 96px 20px;
+    background-color: #f6f9ff;
+}
+
+.roh_list_checkIcon {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+.roh_list_checkIcon li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.roh_list_checkIcon li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background-image: url('/right-list-marker.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* why Choose us  */
+.roh_why_choose_wrap,
+.roh_join_us_wrap {
+    background-color: #f6f9ff;
+    padding: 96px 20px;
+}
+
+.roh_why_choose_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.roh_benefit_card {
+    background: white;
+    padding: clamp(20px, 1.5vw, 32px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.roh_benefit_icon {
+    width: 48px;
+    height: 48px;
+    background: #FFF1F2;
+    color: #ff3600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.roh_benefit_card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+.roh_join_us_content {
+    background-color: #000;
+    padding: 96px 20px;
+    border-radius: 24px;
+    width: 100%;
+    margin: auto;
+}
+
+.roh_join_us_innerContent {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.roh_join_us_content .roh_redBtn {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 30px auto 0;
+}
+.roh_join_us_content .roh_redBtn:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.roh_container a {
+    color: #212529;
+    text-decoration: underline;
+}
+.roh_container .roh_link_white {
+    color: #fff;
+    text-decoration: underline;
+}
+.roh_container a:hover, .roh_link_white:hover {
+    color: #ff3600;
+    text-decoration: underline;
+}
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #6b7280;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width:767px) {
+    .roh_pLarge {
+        font-size: 16px;
+    }
+
+    .roh_our_mission_wrap,
+    .roh_what_we_do_wrap,
+    .roh_why_we_started_wrap,
+    .roh_why_choose_wrap,
+    .roh_our_vision_wrap,
+    .roh_join_us_content, .roh_join_us_wrap {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .roh_why_choose_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .roh_benefit_card {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .roh_why_choose_grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
+        gap: 15px;
+    }
+}

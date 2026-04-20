@@ -1,0 +1,106 @@
+.whychoose_wrap {
+    background-image: url(/images/bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    padding: 96px 20px;
+    font-family: "DM Sans", sans-serif;
+}
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.whychoose_inner{
+    background-color: #ffffff;
+}
+.star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+.second_heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.why_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+.about_media_list {
+    padding: 0px;
+    margin: 0px;
+}
+.about_media_list li {
+    list-style: none;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 15px;
+    padding: 35px 0;
+}
+.about_media_list li:last-child {
+    border-bottom: none;
+}
+.about_media_list li .media {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.about_media_list li .media .media_title {
+    font-weight: 600;
+}
+.whychoose_wrap .back_circle {
+    position: relative;
+    padding: 10px;
+    width: 40px;
+}
+.whychoose_wrap .back_circle img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 1;
+}
+.why_choose_img_wrap {
+    position: relative;
+}
+.why_img {
+    margin: auto;
+    text-align: center;
+}
+.why_imgTwo {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    transform: translate(-1%, -0%);
+}
+.why_imgTwo img {
+    width: 100%;
+    max-width: 100%;
+}
+.why_img .middle_img_cover {
+    border-radius: 200px 200px 200px 200px;
+    width: 100%;
+    height: auto;
+}
+.back_circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: #FF3600;
+    opacity: 10%;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width:767px) {
+    .whychoose_wrap {
+    padding: 48px 15px;
+}
+}

@@ -1,0 +1,291 @@
+.article_read_story {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+}
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.roh_articles_wrap {
+    background-color: #fff;
+    padding: 96px 20px;
+}
+
+.articles_inner {
+    width: 100%;
+    max-width: 1320px;
+}
+
+.circl_btn {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.circl_btn svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+
+.sub_card:hover .read_link .circl_btn svg,
+.read-link:hover .circl_btn svg,
+.main_card:hover .circl_btn svg {
+    transform: rotate(0deg);
+}
+
+.read_link:hover .circl_btn,
+.sub_card:hover .read_link .circl_btn {
+    background: #000;
+    color: #fff;
+}
+
+.singlePost_black_bg {
+    background-color: #000;
+    border-radius: 46px 46px 46px 46px;
+}
+
+.singlePost_imgwrap img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.singlePost_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100%;
+}
+
+.main_card {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_card {
+    color: white;
+}
+.main_card:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main_card .main_carddate {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.main_card h5 {
+    font-weight: bold;
+}
+
+.read_more_btn {
+    background: red;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.sub_card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.sub_card:hover {
+    text-decoration: none;
+}
+.article_sm_imgbox {
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.article_sm_imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sub_card .read_link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.article_sm_content {
+    width: calc(100% - 215px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.article_sm_content h6 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.4em;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.article_sm_content span {
+    font-family: "DM Sans", sans-serif;
+    color: #444;
+}
+
+.sub-card .read_link i {
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.read_link {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1em;
+    color: #FF3600;
+    transition: all .3s ease-in-out;
+}
+
+.thedate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.thedate img {
+    width: 15px;
+    height: 15px;
+}
+
+.read_link .circl_btn {
+    padding: 3px;
+    background-color: #FF3600;
+}
+
+.read_more_btn .circl_btn {
+    background-color: #FF3600;
+}
+
+.read_link .circl_btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.sub_card:hover .read_link {
+    color: #000;
+}
+
+
+/* Overlay gradient on hover */
+
+
+/* Ripple effect */
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.ripple_effect {
+    animation: rippleDrop 0.6s linear;
+}
+
+.left_column {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.second_heading {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    color: #0b1220;
+    margin: 8px 0 5px;
+}
+
+.star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.htiscbox {
+    position: relative;
+    /* important for ripple positioning */
+    overflow: hidden;
+    /* keeps ripple inside */
+}
+
+@media screen and (max-width:767px) {
+
+.roh_articles_wrap {
+    padding: 30px 10px;
+}
+    .sub_card {
+        flex-direction: column;
+    }
+
+    .article_sm_imgbox {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .article_sm_content {
+        width: 100%;
+    }
+}

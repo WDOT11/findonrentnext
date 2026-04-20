@@ -1,0 +1,181 @@
+      /* Base Reset applied locally */
+        .overlay, .overlay * {
+          box-sizing: border-box;
+        }
+
+        .overlay {
+          position: fixed;
+          top: 0; left: 0; 
+          width: 100%;
+          height: 100vh;
+          background: linear-gradient(40deg, #F6E1E5 0%, #DEE7FF 80%);
+          display: flex; justify-content: center; align-items: center;
+          padding: 16px; 
+          z-index: 99999;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          animation: fadeInOverlay 0.3s ease-in-out;
+          overflow-y: auto; /* Allows overlay itself to scroll if content is taller than screen */
+        }
+
+        .roh_container {
+          width: 100%; max-width: 960px;
+          display: flex; flex-direction: column; align-items: center;
+          margin: auto;
+          overflow: hidden;
+        }
+
+        /* --- Main Screen Header --- */
+        .header { text-align: center; margin-bottom: 40px; width: 100%; }
+        .header h1 { 
+          font-size: clamp(24px, 4vw, 32px); 
+          font-weight: 800; color: #111827; margin: 0 0 12px 0; line-height: 1.2;
+        }
+        .subtitle { font-size: 16px; color: #64748B; margin: 0 0 8px 0; font-weight: 500;}
+        .trust-badge { font-size: 14px; color: #64748B; display: flex; align-items: center; justify-content: center; font-weight: 500; margin: 0; }
+
+        /* --- Grid for the 3 Cards --- */
+        .cards-wrapper { 
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+          width: 100%;
+          max-width: 900px;
+        }
+
+        .lang-card {
+          background: #FFFFFF; border-radius: 20px; 
+          padding: 25px 20px; width: 100%; min-height: 250px;
+          display: flex; flex-direction: column; position: relative; cursor: pointer;
+          border: 2px solid transparent; box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+          transition: all 0.2s ease-in-out; 
+          animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          opacity: 0; transform: translateY(20px);
+        }
+        .lang-card:hover {
+          border: 2px solid #FF5722;
+        }
+        .lang-card:nth-child(1) { animation-delay: 0.1s; }
+        .lang-card:nth-child(2) { animation-delay: 0.2s; }
+        .lang-card:nth-child(3) { animation-delay: 0.3s; }
+        .lang-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+        .lang-card.selected { border-color: #FF5722; }
+
+        .recommended-badge {
+          position: absolute; top: -14px; left: 20px;
+          background: #FF5722; color: #FFF; font-size: 10px; font-weight: 700;
+          padding: 6px 14px; border-radius: 20px; letter-spacing: 0.5px;
+          box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3); white-space: nowrap;
+        }
+
+        .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+        .icon-circle { width: 48px; height: 48px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 20px; font-weight: 700; flex-shrink: 0; }
+        .icon-gray { background: #F1F5F9; color: #475569; }
+        .icon-orange { background: #FFF1EB; color: #FF5722; font-size: 24px; }
+        .check-icon { display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+        .lang-title { font-size: clamp(20px, 3vw, 22px); font-weight: 700; color: #0F172A; margin: 0 0 12px 0; word-wrap: break-word;}
+        .pill { background: #FFF1EB; color: #FF5722; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 8px; margin-bottom: auto; width: fit-content; }
+        .lang-desc { font-size: 14px; color: #64748B; margin: 16px 0 0 0; line-height: 1.5; margin-top: auto; }
+
+        .footer { margin-top: 40px; text-align: center; width: 100%; }
+        .skip-btn { background: transparent; border: none; font-size: 15px; font-weight: 600; color: #64748B; cursor: pointer; padding: 10px 20px; border-radius: 8px; transition: color 0.2s; }
+        .skip-btn:hover { color: #0F172A; }
+        .skip-btn span { font-size: 18px; vertical-align: middle; margin-left: 4px; }
+
+        /* --- Browse Languages Modal --- */
+        .all-langs-modal {
+          background: #ffffff;
+          border-radius: 20px;
+          padding: 32px;
+          width: 100%;
+          max-width: 440px;
+          box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+          animation: popIn 0.3s ease forwards;
+          display: flex;
+          flex-direction: column;
+          max-height: 90vh;
+        }
+
+        .modal-header-row { display: flex; align-items: center; margin-bottom: 24px; flex-shrink: 0; }
+        .back-arrow {
+          background: #F8FAFC; border: none; width: 40px; height: 40px; border-radius: 50%;
+          display: flex; justify-content: center; align-items: center; cursor: pointer;
+          margin-right: 16px; transition: background 0.2s; flex-shrink: 0;
+        }
+        .back-arrow:hover { background: #E2E8F0; }
+        .modal-header-row h2 { font-size: 18px; font-weight: 700; color: #111827; margin: 0; }
+
+        .search-box { position: relative; margin-bottom: 24px; flex-shrink: 0; width: 100%; }
+        .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); }
+        .search-box input {
+          width: 100%; padding: 14px 16px 14px 44px; border-radius: 12px; border: none;
+          background: #FFF8F6; font-size: 15px; color: #334155; outline: none;
+        }
+        .search-box input::placeholder { color: #94A3B8; }
+
+        .langs-list-container {
+          flex: 1; 
+          overflow-y: auto; /* List scrolling only */
+          padding-right: 4px; scrollbar-width: thin; scrollbar-color: #E2E8F0 transparent;
+          min-height: 0; 
+        }
+        .langs-list-container::-webkit-scrollbar { width: 6px; }
+        .langs-list-container::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 10px; }
+
+        .list-item {
+          display: flex; justify-content: space-between; align-items: center;
+          padding: 16px; cursor: pointer; border-radius: 12px; margin-bottom: 8px;
+          border: 1px solid transparent; transition: all 0.2s;
+        }
+        .list-item:hover:not(.selected-item) { background: #F8FAFC; }
+        .selected-item { border-color: #F9D8CE; background: #FFFBF9; }
+
+        .list-item-content { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+        .list-item-title { font-size: 16px; font-weight: 700; color: #111827; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .bracket-text { font-weight: 500; color: #94A3B8; font-size: 14px; margin-left: 6px; }
+        .list-item-pill { font-size: 13.5px; color: #ef5522; font-weight: 500; white-space: normal; }
+
+        .list-item-check { flex-shrink: 0; margin-left: 16px; display: flex; align-items: center; }
+
+        @keyframes fadeInOverlay { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes popIn {
+          from { opacity: 0; transform: translateY(15px) scale(0.98); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Responsive Breakpoints */
+        
+        /* Tablets & Small Laptops */
+        @media (max-width: 900px) {
+          .cards-wrapper {
+            grid-template-columns: repeat(2, 1fr); 
+            max-width: 600px;
+          }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 640px) {
+          .header { margin-bottom: 24px; }
+          .cards-wrapper {
+            grid-template-columns: 1fr; 
+            max-width: 340px; 
+            gap: 20px;
+          }
+          .lang-card { min-height: auto; padding: 20px; }
+          .card-top { margin-bottom: 20px; }
+          .lang-card:nth-child(2) { margin-top: 15px; }
+          .all-langs-modal {
+            padding: 24px 20px; 
+            max-height: 85vh; 
+          }
+          .list-item { padding: 14px 12px; }
+          .footer { margin-top: 24px; }
+        }
+
+        /* Very small devices */
+        @media (max-width: 360px) {
+          .overlay { padding: 12px; }
+          .all-langs-modal { padding: 20px 16px; }
+          .lang-title { font-size: 18px; }
+          .pill { font-size: 12px; padding: 4px 8px; }
+        }

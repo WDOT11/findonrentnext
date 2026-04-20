@@ -1,0 +1,108 @@
+.roh_singlePost_wrap {
+    background-color: #fff;
+    padding: 96px 20px;
+}
+.roh_section_label {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    width: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 13px;
+    line-height: 1em;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.roh_singlePost_black_bg {
+    background: linear-gradient(111.67deg, #1E3A8A 0%, #0F172A 100%);
+    border-radius: 32px;
+}
+.roh_singlePost_main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+}
+.roh_singlePost_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    min-height: 100%;
+}
+.roh_second_heading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.roh_singlePost_desc {
+    max-width: 80%;
+    color: rgba(148, 163, 184, 1);
+}
+.roh_singlePost_imgwrap img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.roh_blueBtn {
+  width: max-content; 
+  background: linear-gradient(103.81deg, #2563EB 0%, #7C3AED 100%);
+  border: none;
+  color: white;
+  padding: clamp(8px, 1.5vw, 12px) clamp(16px, 1.5vw, 24px);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100px;
+  line-height: 1em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.roh_blueBtn:hover {
+  background: linear-gradient(to right, #3b82f6, #4f46e5);
+}
+.roh_blueBtn svg {
+  background: #91acefa6;
+  border-radius: 100px;
+  padding: 4px;
+  transform: rotate(320deg);
+  transition: all 0.3s ease;
+}
+.roh_blueBtn:hover svg {
+  transform: rotate(360deg);
+}
+
+
+@media (max-width: 991px) {
+    .roh_singlePost_main {
+        padding: 80px 25px;
+    }
+    .roh_global_padding {
+        padding: 20px;
+    }
+    .roh_second_heading {
+        font-size: 22px;
+        margin-bottom: 10px;
+
+}
+}
+
+@media (max-width: 767px) {
+    .roh_singlePost_main {
+        padding: 30px 20px;
+    }
+.roh_singlePost_wrap {
+    padding: 30px 10px;
+}
+.roh_singlePost_content {
+    gap: 16px;
+    text-align: center;
+}
+}

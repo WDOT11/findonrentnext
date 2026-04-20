@@ -1,0 +1,517 @@
+.roh_register_content {
+  background-image: url(/images/homepg/bg-img-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: clamp(90px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+}
+
+.rohuserres_shell {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+
+}
+
+.rohuserres_card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.05);
+}
+
+.rohuserres_title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: "DM Sans", sans-serif;
+}
+
+.rohuserres_sub {
+  margin: 6px 0 18px;
+  color: #475569;
+}
+
+.rohuserres_form {
+  display: grid;
+  gap: 14px;
+}
+
+.rohuserres_grid2 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rohuserres_fieldCol {
+  display: grid;
+  gap: 6px;
+}
+
+.rohuserres_label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.rohuserres_input {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+  outline: none;
+  box-shadow: 0px 0px 3px #ffffff;
+  transition: 0.3s ease;
+}
+
+.rohuserres_input:focus {
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.rohuserres_actionsRow {
+  display: flex;
+  gap: 16px;
+}
+
+.rohuserres_loginlink.roh_create_ac_log {
+  text-align: left;
+}
+
+.rohuserres_btn {
+  margin-top: 6px;
+  background: #ff3c00;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  height: 48px;
+  border-radius: 100px;
+  user-select: none;
+  font-size: 16px;
+  line-height: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  transition: all .3s ease;
+}
+
+.rohuserres_btn:hover {
+  background: #000;
+}
+
+.rohuserres_loginlink {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .rohuserres_grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* existing styles you already have … */
+
+.rohuserres_errorTop {
+  margin: 0 0 12px 0;
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.rohuserres_error {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.rohuserres_input--invalid {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+/* =========================
+   Language Switcher
+========================= */
+
+.languageSwitcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.languageLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.languageSelect {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  min-width: 140px;
+  outline: none;
+}
+
+.languageSelect:hover {
+  border-color: #999;
+}
+
+.languageSelect:focus {
+  border-color: #3b82f6; /* blue focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* =========================
+   Regional Language Message
+========================= */
+
+.rohuserlogn_regionText,
+.rohuserres_regionText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Register page info text */
+.rohuserres_infoTop {
+  margin: 10px 0 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 480px) {
+  .languageSwitcher {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .languageSelect {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+
+@media screen and (max-width:991px) {
+  /* .roh_register_content {
+    padding: 150px 20px 100px 20px;
+  } */
+
+}
+
+@media screen and (max-width:768px) {
+  /* .roh_register_content {
+    padding: 100px 20px 50px 20px;
+  } */
+
+  .rohuserres_btn {
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 1em;
+  }
+}
+
+/* Wrapper to keep icon inside input area */
+.rohuserres_passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure input takes full width */
+.rohuserres_passwordWrapper .rohuserres_input {
+  width: 100%;
+  padding-right: 40px;
+  /* space for eye icon */
+  box-sizing: border-box;
+}
+
+/* Eye button styling */
+.rohuserres_eyeBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1;
+  padding: 0;
+}
+
+/* Optional hover effect */
+.rohuserres_eyeBtn:hover {
+  color: #000;
+}
+
+
+
+/* CSS FOR THE POPUP */
+
+  .roh_popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .roh_popup_box {
+     background: linear-gradient(40deg, #F6E1E5 0%, #DEE7FF 80%);
+    padding: 0 clamp(15px, 5vw, 30px) clamp(15px, 5vw, 30px) clamp(15px, 5vw, 30px);
+    text-align: center;
+    height: 100vh;
+    overflow: auto;
+    max-width: auto;
+    width: 100%;
+  }
+  .roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.roh_popup_skip_btn {
+  font-size: clamp(14px, 2vw, 16px);
+  color: #212529bf;
+  gap: 6px;
+  line-height: 1em;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+.roh_popup_skip_btn:hover {
+  color: #ff3600;
+  text-decoration: underline;
+}
+
+.roh_popup_innerWarp {
+  width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roh_hero_section h1 {
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1.2em;
+  color: #000;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+.hero-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.roh_hero_section .welcome-badge {
+  line-height: 1em;
+  background-color: #0000000D;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 1em;
+  width: max-content;
+  font-weight: 700;
+  text-transform: normal;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 20px auto;
+  }
+.roh_cards_grid {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    margin: 20px auto;
+}
+.roh_card_dominant {
+    background-color: #ffffff;
+    border: 2px solid #ff3600;
+    box-shadow: 0 20px 48px -12px rgba(16, 185, 129, 0.15);
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.roh_action_card {
+    flex: 1 1 360px;
+    border-radius: 20px;
+    padding: clamp(24px, 3vw, 32px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: #f3f4f6;
+}
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.roh_card_muted {
+    background-color: #fafafa;
+    border: 1px solid transparent;
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.06);
+    transform: scale(0.97);
+    z-index: 1;
+}
+
+.recommended-badge {
+    position: absolute;
+    top: -14px;
+    left: 24px;
+    background: #ff3600;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    z-index: 5;
+}
+
+.card-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.roh_card_dominant .title-icon {
+    background: #10b9811a;
+    color: #059669;
+}
+.title-icon {
+    width: 36px;
+    height: 36px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b0b0b;
+}
+.card-desc {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: start;
+}
+.benefits-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-left: 0;
+}
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0b0b0b;
+}
+.benefit-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roh_card_dominant .benefit-icon {
+    color: #ff4500;
+    background-color: #10b98126;
+}
+
+.roh_btn {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+.roh_btnOrange {
+    background-color: #ea580c;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+}
+.roh_btnOrange:hover {
+    background-color: #ff3600;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+}
+.roh_btnBlack {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+.roh_btnBlack :hover {
+    background-color: #494949;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.trust-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: clamp(11px, 2vw, 14px);
+    color: #6B7280;
+    font-weight: 500;
+    padding: 8px 16px;
+}

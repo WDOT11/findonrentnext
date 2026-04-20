@@ -1,0 +1,102 @@
+.roh_headingH2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+.roh_star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --------------Orange Button  with Arrow -----------------  */
+
+.roh_btnsRed .roh_circl_btn a,
+.roh_btnsRed .roh_button_custom a {
+    background: #FF3600;
+    color: #fff;
+    text-decoration: none;
+}
+.roh_btnsWhite .roh_circl_btn a,
+.roh_btnsWhite .roh_button_custom a {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.roh_button_custom a {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.roh_circl_btn a {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a:hover img,
+.roh_button_custom:hover~.roh_circl_btn a img {
+    transform: rotate(0deg);
+}
+
+.roh_btnsRed .roh_circl_btn a:hover,
+.roh_btnsRed .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: #000;
+}
+.roh_btnsWhite .roh_circl_btn a:hover,
+.roh_btnsWhite .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: #FF3600;
+}
+
+@media (max-width: 991px) {
+    .roh_headingH2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .roh_button_custom a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .roh_circl_btn a img {
+        width: 20px;
+        height: 20px;
+    }
+}

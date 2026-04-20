@@ -1,0 +1,110 @@
+.testimonial_wrap {
+    padding: 96px 20px;
+}
+
+.testimonial_wrap {
+    background-image: url(/images/testimonial-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial_inner {
+    border-radius: 46px 46px 46px 46px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+.testimonial_desc_wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.testimonial_profile_wrap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.testimonial_profile_wrap .user_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial_profile_wrap .user_image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.profile_data .author_name {
+    font-size: 19px;
+    display: block;
+}
+
+.author_desc {
+    font-size: 16px;
+    display: block;
+}
+
+.fleetscard {
+    border-color: #ECECEC;
+    border-radius: 30px 30px 30px 30px;
+    min-height: 100%;
+}
+
+.testimonial_wrap .fleetscard {
+    padding: 15px;
+}
+
+.star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.second_heading {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    color: #0b1220;
+    margin: 8px 0 5px;
+}
+
+.gray_global_heading {
+    color: #616161;
+}
+
+.global_heading {
+    font-size: 16px;
+}
+
+.testmonial_grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .testimonial_wrap {
+        padding: 48px 15px;
+    }
+
+    .testmonial_grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

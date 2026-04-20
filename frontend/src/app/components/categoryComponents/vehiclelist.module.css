@@ -1,0 +1,1190 @@
+/* Hero section */
+.hero_wrap {
+  position: relative;
+  /* margin-top: 70px; */
+}
+
+.fleetswrap_inner :global(.container) {
+  width: 100%;
+  max-width: 1320px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.hero_container {
+  padding: clamp(80px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+}
+
+.main_heading {
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.main_heading h1 {
+  font-size: 36px;
+  color: var(--blackcolor);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.main_heading h2 {
+  font-size: 23px;
+  color: var(--blackcolor);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+/* Word animation */
+.cdWordsWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cdWordsWrapper b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.cdWordsWrapper b.isVisible {
+  opacity: 1;
+  position: relative;
+}
+
+.cdLetters {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cdLetters i {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: waveIn 0.5s forwards;
+}
+
+@keyframes waveIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Searchbar */
+.custom_searchbar_wrap {
+  margin-top: 60px;
+  position: relative;
+}
+
+.custom_searchbar {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  padding: 30px 30px;
+  border-radius: 20px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.location_in_wrap,
+.category_in_wrap,
+.search_wraperInput {
+  position: relative;
+}
+
+.category_in_wrap select {
+  appearance: none;
+  /* simple standard property */
+  min-width: 170px;
+  min-height: 48px;
+  padding: 10px 40px 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f5fa;
+}
+
+
+.category_in_wrap select:focus,
+.location_in_wrap input:focus,
+.search_block_inner input:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.location_in_wrap input {
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f5fa;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.loc_block_inner,
+.cat_block_inner,
+.whatoftype {
+  position: relative;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+  width: max-content;
+  font-family: "DM Sans", sans-serif;
+}
+
+.whatoftype::after,
+.loc_block_inner::after,
+.cat_block_inner::after {
+  position: absolute;
+  content: '';
+  height: 8%;
+  width: 100%;
+  background-color: #edc7a9;
+  bottom: 8%;
+  left: 0;
+  z-index: 0;
+}
+
+/* Search button */
+.rent_search_btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.rent_search_btn button {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  background: #2d2d2d;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 700;
+  padding: 13px 20px 13px 25px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.rent_search_btn button:hover {
+  background-color: #FF3600;
+}
+
+.rent_search_btn .roh_search_clearBtn {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background: #a3a9af;
+  color: #fff;
+  border: 1px solid transparent;
+  align-items: center;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  line-height: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+.rent_search_btn .roh_search_clearBtn:hover {
+  background: #7a8a9a;
+}
+
+.rent_search_btn button svg {
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rent_search_btn button>svg {
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Borders */
+.border_rightF1 {
+  border-right: 1px solid #e4e4e4;
+}
+
+/* Bottom section */
+.list_bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 50px auto 0px;
+  padding: 10px;
+  border-radius: 50px;
+  width: fit-content;
+  background-color: #fff9;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+.list_bottom li {
+  list-style: none;
+  padding-inline: 25px;
+  color: #6c6c6c;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.list_bottom li:nth-child(2) {
+  border-inline: solid 1px #8e8b8b;
+}
+
+.fleetswrap_inner {
+  padding: 96px 20px;
+  background-color: #FFF8F6;
+}
+
+.fleets_wrap_main {
+  max-width: none;
+  width: 100%;
+  margin-inline: 0;
+}
+
+/* small star label row */
+.star_box {
+  margin-bottom: 8px;
+}
+
+.star_title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #343a40;
+}
+
+/* H3 like in screenshot */
+.second_heading {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #0b1220;
+  margin: 8px 0 0;
+}
+
+
+
+/* ===== Card ===== */
+.fleetscard {
+  border: 1px solid #e9eef5;
+  border-radius: 20px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  background: #fff;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.fleetscard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(16, 24, 40, 0.12);
+}
+
+/* top image area */
+.fleetscard :global(.card-img-top) {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 220px;
+  aspect-ratio: 1/1;
+}
+
+/* card body spacing/typography */
+.fleetscard :global(.card-body) {
+  padding: 0px;
+}
+
+.feets_cardH {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0b1220;
+  margin: 0px 0px 15px 0px;
+}
+
+/* category pill */
+.fleetscard :global(.badge-car) {
+  display: inline-block;
+  background: #f1f3f5;
+  color: #353a40;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.fleetscard:hover .ctaBtn {
+  background-color: #000;
+
+}
+
+.fleetscard:hover .ctaBtn svg {
+  transform: rotate(0deg);
+}
+
+/* feature rows (icon + label on left, value on right) */
+.fleetscard :global(.feets_data_list) {
+  color: #4B5563;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.roh_feets_list span {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.roh_feets_data_list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fleetscard :global(.feets_data_list svg) {
+  width: 14px;
+  height: auto;
+}
+
+/* divider at bottom of details */
+.fleetscard :global(.border-top) {
+  border-top: 1px solid #e9eef5 !important;
+}
+
+/* price text (left side) */
+.priceStrong {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b1220;
+}
+
+.priceMuted {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7a8a9a;
+}
+
+/* circular CTA on right */
+.circl_btn button {
+  padding: 5px;
+  border-radius: 999px;
+  border: none;
+  display: grid;
+  place-items: center;
+  background: #ff4a16;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .3s ease;
+}
+
+.circl_btn button:hover {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+/* ensure arrow inside button looks white */
+.circl_btn button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.circl_btn button svg path {
+  fill: #fff;
+}
+
+/* carousel item spacing if you use Owl */
+.fleetswrap_inner :global(.owl-carousel .item) {
+  padding: 12px;
+}
+
+.fleetswrap_inner :global(.owl-carousel .owl-stage-outer) {
+  padding: 4px;
+}
+
+
+/* CTA link wrapper (Next <Link>) */
+.ctaLink {
+  text-decoration: none;
+  display: inline-grid;
+  /* size collapse na ho */
+}
+
+/* Round orange CTA button */
+.ctaBtn {
+  padding: 6px;
+  border: 0;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #FF3600;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+/* Hover/Focus states */
+.ctaBtn:hover,
+.ctaBtn:focus-visible {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+  outline: none;
+}
+
+/* Icon inside */
+.ctaBtn svg {
+  width: 18px;
+  height: auto;
+  display: block;
+  transform: rotate(-30deg);
+  transition: all .3s ease-in-out;
+}
+
+.ctaBtn svg:hover {
+  transform: rotate(0deg);
+}
+
+/** Products page pagination */
+/* Pagination container */
+.rohproducts_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* General button styling */
+.rohproducts_btn {
+  background-color: #ff3c00;
+  color: #ffffff;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid #ff3c00;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rohproducts_btn:hover {
+  background-color: #000000;
+  border: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Active page button */
+.rohproducts_btn_active {
+  background-color: #ff3600 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: 1px solid #ff3600 !important;
+}
+
+/* Inactive page button */
+.rohproducts_btn_inactive {
+  background-color: #fff;
+  color: #000;
+  line-height: 1em;
+  border-radius: 100px;
+  border: 1px solid #E5E7EB;
+  line-height: 1em;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+/* Disabled button */
+.rohproducts_btn:disabled {
+  background-color: #e9ecef;
+  border: 2px solid #dcdfe1;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Page number button */
+.rohproducts_btn_page {
+  background-color: #fff;
+  color: #000;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+  border-radius: 100px;
+  border: 1px solid #E5E7EB;
+  line-height: 1em;
+  text-decoration: none;
+  font-size: clamp(12px, 1.5vw, 16px);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.rohproducts_btn_page:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+.roh_cardFooter {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctaBtn_new {
+  background-color: #ff3600;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 10px;
+  line-height: 1em;
+  border-radius: 100px;
+  border: 1px solid #ff3600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+.ctaBtn_new svg {
+  width: clamp(12px, 1.5vw, 14px);
+  height: auto;
+}
+.roh_cardFooter_price {
+  width: 100%;
+  max-width: max-content;
+}
+.roh_max_content {
+  width: max-content;
+}
+.ctaBtn_new:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+/* Fillter and Search Bar CSS  */
+.roh_filtter_top_bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roh_fiiters {
+  width: 100%;
+  max-width: 49%;
+}
+
+.roh_searchbar_bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roh_searchbar_bottom_fields {
+  width: 100%;
+}
+
+.roh_searchinput_btn_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.roh_service_searchInput {
+  width: 100%;
+  max-width: 600px;
+}
+
+.search_wraperInput {
+  width: 100%;
+}
+
+.search_wraperInput input {
+  position: relative;
+}
+
+.search_wraperInput input::before {
+  content: '';
+}
+
+.roh_locationInput,
+.roh_catInput,
+.roh_brandInput,
+.roh_searchinput {
+  position: relative;
+}
+
+.location_in_wrap svg {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* .roh_car_type {
+  display: none;
+} */
+
+.category_in_wrap svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search_wraperInput input {
+  padding: 10px 15px 10px 40px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f5fa;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.search_wraperInput svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+.roh-single_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.roh-double_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.roh-triple_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.roh_vehicleslisting_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/** Location search input*/
+.city_dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding:0;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.city_dropdown li {
+  list-style: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.city_dropdown li:hover {
+  background: #f9fafb;
+}
+
+.city_info {
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #6b7280;
+  cursor: default;
+}
+
+.dropdown_loader_img {
+  width: 28px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 4px;
+  align-items: center;
+}
+
+.roh_vendor_link {
+  color: #6c757d;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.roh_vendor_link:hover {
+  color: #ff3600;
+  text-decoration: underline;
+}
+
+.fastAppear {
+  opacity: 0;
+  transform: translateY(4px);
+  animation: appearNow 0.15s linear forwards;
+}
+
+.roh_cwd_label {
+  margin-top: -5px;
+  background-color: #111827d9;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.roh_cwd_label svg {
+  width: 14px;
+  height: 14px;
+}
+
+.fleetscard .roh_cardImgWrapper {
+  position: relative;
+}
+
+.roh_car_type {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #33373a9c;
+  color: #ffff;
+  border-radius: 5px;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  line-height: 1em;
+  padding: 4px 10px;
+  font-size: 12px;
+  z-index: 1;
+  font-weight: 500;
+  max-width: fit-content;
+}
+
+/** Breadcrum */
+/* .breadcrumbWrap {
+  margin-top: 8px;
+} */
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+
+.breadcrumbList a {
+  color: #6b7280;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbList .separator {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 500;
+}
+.roh_seo_links_section {
+  background: #ffff;
+  padding: 40px 40px;
+  max-width: 1280px;
+  border-radius: 15px;
+  margin: 48px auto 0 auto;
+}
+.roh_seo_links_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.roh_seo_links_block a {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4B5563;
+  line-height: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.roh_seo_links_block a:hover {
+  background: #F3F4F6;
+  color: #111827;
+  border-color: #D1D5DB;
+  text-decoration: none;
+}
+
+
+/*  */
+.status_available {
+  color: #16a34a;
+}
+
+.status_rented {
+  color: #dc2626;
+}
+
+.status_booked {
+  color: #f59e0b;
+}
+
+.status_default {
+  color: #6b7280;
+}
+
+.roh-single {
+  position: relative;
+  overflow: hidden;
+}
+
+
+@keyframes appearNow {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive CSSS */
+@media screen and (max-width: 1280px) {
+  .roh_vehicleslisting_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .roh_fiiters {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .border_rightF1,
+  .roh_boder_bottumMob {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 0;
+    padding-bottom: 20px;
+  }
+   .roh_vehicleslisting_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .fleetscard :global(.card-img-top) {
+    width: 100%;
+    height: 125px;
+  }
+  .roh-single_grid .fleetscard :global(.card-img-top) {
+    width: 100%;
+    height: 200px;
+  }
+
+  .feets_cardH,
+  .priceStrong {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+
+  .roh_feets_list {
+    font-size: 14px;
+  }
+
+  .fleetscard :global(.feets_data_list),
+  .priceMuted {
+    font-size: 14px;
+  }
+
+  .ctaBtn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .list_bottom li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom_searchbar {
+    border-radius: 20px;
+  }
+
+  .roh_searchinput_btn_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .fleetswrap_inner {
+    padding: 30px 10px;
+  }
+
+  .roh_vehicleslisting_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0;
+  }
+
+  .fleetscard {
+    padding: 10px;
+  }
+
+  .roh_fiiters {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .border_rightF1,
+  .border_rightF2 {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .list_bottom li {
+    font-size: 10px;
+  }
+
+  .custom_searchbar_wrap {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .custom_searchbar {
+    padding: 1rem
+  }
+
+  .main_heading h1 {
+    font-size: 32px;
+  }
+
+  .ctaBtn {
+    padding: 4px;
+  }
+
+  .roh_feets_data_list {
+    gap: 6px;
+  }
+
+  .roh_feets_data_list svg {
+    width: 14px;
+    height: auto;
+  }
+
+  .roh_cwd_label {
+    padding: 4px 6px;
+  }
+  .roh_seo_links_section {
+    padding: 40px 20px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .roh-single_grid .fleetscard, .roh-double_grid .fleetscard{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.roh-single_grid .fleetscard .roh_cwd_label, .roh-double_grid .fleetscard .roh_cwd_label  {
+  position: absolute;
+  top: 20px;
+  border-radius: 10px 0 10px 0;
+}
+.roh-single_grid .roh_cardImgWrapper, .roh-double_grid .roh_cardImgWrapper {
+  width: 40%;
+}
+.roh-double_grid .fleetscard .cardBody {
+  width: calc(100% - 40%);
+}
+ }
+@media screen and (max-width: 680px) {
+  .roh-triple_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+ @media screen and (max-width: 620px) {
+.roh_cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-wrap: wrap;
+} 
+.ctaBtn_new {
+  padding: 4px 8px;
+  font-size: 10px;
+  width: 100%;
+}
+.roh_cardFooter_price {
+  width: 100%;
+  max-width: 100%;
+}
+}
+@media screen and (max-width: 550px) {
+   .roh-triple_grid, .roh-double_grid {
+    gap: 10px;
+  }
+  .fleetscard :global(.card-img-top) {
+    height: 100px;
+  }
+
+  .feets_cardH,
+  .priceStrong {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+
+  .feets_cardH {
+    margin-bottom: 8px;
+  }
+
+  .roh_feets_list {
+    font-size: 11px;
+  }
+
+  .fleetscard :global(.feets_data_list),
+  .priceMuted {
+    font-size: 11px;
+  }
+
+  .fleetscard :global(.feets_data_list svg) {
+    width: 14px;
+  }
+
+  .list_bottom li {
+    padding-inline: 8px;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 10px;
+  }
+
+  .roh_feets_list span {
+    font-size: 11px;
+  }
+
+  .roh_cwd_label {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+.roh_seo_links_section  {
+    padding: 15px 10px;
+  }
+  .roh_seo_links_block {
+    gap: 8px;
+  }
+  .roh_seo_links_block a {
+    font-size: 10px;
+    padding: 4px 8px;
+    width: calc(50% - 8px);
+  }
+  .roh_searchinput_btn_wrapper {
+    display: block;
+  }
+  .rent_search_btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .ctaBtn_new {
+    padding: 4px 4px;
+    font-size: 9px;
+  }
+}
+
+
+.cityHighlight {
+  color: #FF3600;
+  font-weight: 600;
+}

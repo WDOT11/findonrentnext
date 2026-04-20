@@ -1,0 +1,50 @@
+.roh_singlePost_black_bg {
+    background-color: #000;
+    border-radius: 46px 46px 46px 46px;
+}
+.roh_singlePost_main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    padding: 100px;
+}
+.roh_global_padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-inline: 10px;
+}
+.roh_singlePost_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100%;
+}
+.roh_second_heading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.roh_singlePost_desc {
+    max-width: 65%;
+}
+.roh_singlePost_imgwrap img {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .roh_singlePost_main {
+        padding: 25px;
+        max-width: 99%;
+    }
+    .roh_global_padding {
+        padding: 20px;
+    }
+    .roh_second_heading {
+        font-size: 22px;
+        margin-bottom: 10px;
+
+}
+}

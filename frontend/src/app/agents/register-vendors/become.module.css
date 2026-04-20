@@ -1,0 +1,930 @@
+/* Form Wrapper & Layout */
+/* .form_section_main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+} */
+
+.roh_beacome_host *{
+  font-family: "DM Sans", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.col12,
+.roh_inoputField {
+  padding: 0 0.5rem;
+}
+
+.border.roh_rowwhite {
+  border-radius: 30px;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  padding: 25px 20px 25px 20px;
+}
+
+/* Headings & Text */
+/* h1, h2, h4 {
+  margin: 0;
+  font-weight: bold;
+} */
+
+.main_steps {
+  font-size: 1.25rem;
+}
+
+.formLabel {
+  font-weight: 500;
+}
+
+.formText {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1em;
+}
+
+/* Form Controls */
+.formControl {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.reFormF {
+  background-color: #dbdfeb1f;
+}
+
+select.reFormF {
+  appearance: none;
+  background-image: url("/images/assets/download.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 6px;
+}
+
+.text_danger {
+  color: #FF3600 !important;
+}
+
+/* Buttons & Navigation */
+.btn {
+  font-size: 15px;
+  line-height: 1em;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.nextStep,
+.submitBtn {
+  background-color: #FF3600;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+}
+
+.nextStep {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.prevStep {
+  background-color: #e3e3e8;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.prevStep:hover {
+  background-color: #e3e3e8cc;
+}
+
+.nextStep:hover,
+.submitBtn:hover {
+  background-color: #cc2f00;
+}
+
+/* Progress Bar */
+.progress {
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.progressBar {
+     background-color: #FF3600;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1em;
+    padding: 2px 4px;
+    height: 100%;
+    font-size: 14px;
+    align-content: center;
+}
+
+/* OTP Input */
+#otpInputs input {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Separators */
+.footerSepertor,
+.titleSepertor {
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 1rem 0;
+}
+
+/* Checkboxes */
+.formCheckInput {
+  margin-right: 0.5rem;
+}
+
+.formCheckLabel {
+  font-size: 0.875rem;
+}
+
+/* Radio / Category Buttons */
+.btnCheck:checked+.radioBtns,
+.btnCheck+.radioBtns:hover {
+  background-color: #FF3600;
+  color: #fff;
+  border-color: #ffffff;
+  user-select: none;
+}
+
+.radioBtns {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #fce1d9;
+  border-radius: 0.5rem;
+  transition: all .1s ease-in-out;
+}
+
+.wmax {
+  width: max-content;
+}
+
+/* Helpers */
+.dFlex {
+  display: flex !important;
+}
+
+.gap2 {
+  gap: 0.5rem;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+.textMuted {
+  color: #6c757d !important;
+}
+
+.mb3 {
+  margin-bottom: 8px !important;
+}
+
+.mb4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* .py5 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+} */
+.px4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.pxmd5 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+
+/** new css */
+.repeaterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btnClose {
+  align-self: flex-end;
+}
+
+.categoryWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btnCheck {
+  display: none;
+  /* radio hide */
+}
+
+.repeaterItem {
+  border: 1px solid #ddd;
+  /* simple outline */
+  border-radius: 8px;
+  /* halka round corner */
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fff;
+  /* white background */
+}
+
+/* Vechicle form css */
+/* Vehicle Details Form */
+.vehicleForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Common Input & Textarea */
+.vehicleForm input,
+.vehicleForm textarea,
+.vehicleForm select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.vehicleForm input:focus,
+.vehicleForm textarea:focus,
+.vehicleForm select:focus {
+  border: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+/* Textarea */
+.vehicleForm textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* File Upload */
+.vehicleForm input[type="file"] {
+  padding: 6px;
+  border: none;
+}
+
+/* Grouped Inputs (Address etc.) */
+/* .vehicleForm div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+} */
+
+/* Error Text */
+.vehicleForm span {
+  font-size: 14px;
+  color: red;
+}
+
+/* Small Dropdown Styling */
+.vehicleForm select {
+  background: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .form_section_main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
+
+
+/* Become a host Section new CSS */
+.roh_beacome_host {
+  background-image: url(/images/homepg/bg-img-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 180px 30px 100px 30px;
+}
+
+.roh_fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roh_fields .roh_inoputField {
+  width: 50%;
+}
+
+.reFormF:focus {
+  background-color: #ffffff47 !important;
+  border-color: transparent !important;
+  box-shadow: 0px 0px 3px #ff3600 !important;
+  outline: none;
+}
+
+.roh_vehicleDform_heighlight {
+  background-color: #fffbfa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.roh_chooseImagebtn {
+  cursor: pointer;
+  min-height: 150px;
+  background-color: #ffffff;
+  border: 4px dotted #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 8px;
+}
+
+.roh_chooseImagebtn:focus {
+  outline: none;
+}
+
+.roh_chooseImage_comtent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+}
+
+.roh_imageUpload_btn,
+.roh_mainimage {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.roh_pick {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.roh_chooseImage_innerText span {
+  font-size: 16px;
+}
+
+/* on boarding 4th step from  */
+.imageWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  ;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.imageWrap img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.roh_step4Content {
+  border: 1px solid #0000002d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.roh_priceRight_wrap .roh_priceRight_inner {
+  background-color: #FFF8F6;
+  border-radius: 30px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.roh_sidebar_pricing h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 50px;
+}
+
+.roh_sidebar_pricing h5 span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.roh_feets_data_list span,
+.roh_content_layer span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+
+.roh_content_layer {
+  margin-bottom: 25px;
+}
+
+.roh_productPrice {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: dashed 1px #000;
+}
+
+.roh_productPrice .roh_content_layer {
+  margin-bottom: 0px;
+}
+
+.roh_step4Other_info {
+  margin-top: 50px;
+}
+
+.roh_check_list {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.roh_check_list li {
+  list-style: none;
+}
+
+.roh_check_list li .roh_featureList img {
+  width: 28px;
+  height: 28px;
+}
+
+.roh_featureList,
+.roh_premiumFeaturelist {
+  text-decoration: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.roh_featureList h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.roh_featureList span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.roh_step4th_form {
+  padding: 20px 25px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.formCheckLabel .roh_aLink {
+  color: #FF3600;
+  text-decoration: none;
+}
+
+.formCheckLabel .roh_aLink:hover {
+  text-decoration: underline;
+}
+
+
+/* Onboarding 4th Step form   */
+.roh_info_reviewSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.roh_reviewSection {
+  background-color: #faebef4a;
+  border-radius: 15px;
+  border: solid 1px #ccc;
+  overflow: hidden;
+}
+
+.roh_reviewSection_header {
+  background-color: #faebef;
+  padding: 15px 20px;
+  border-bottom: 1px solid #0000000f;
+}
+
+.roh_reviewSection_innercontent {
+  padding: 20px;
+}
+
+.roh_reviewSection_innercontent ul,
+.roh_reviewaddressSection_innercontent ul, .roh_reviewslectedservicesSection_innercontent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roh_reviewSection_innercontent ul li,
+.roh_reviewaddressSection_innercontent ul li, .roh_reviewslectedservicesSection_innercontent ul li {
+
+  margin-bottom: 4px;
+}
+
+.roh_reviewSection h5,
+.roh_reviewaddressSection h5,
+.roh_reviewslectedservicesSection h5 {
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_reviewaddressSection {
+  background-color: #e8eefd63;
+  border-radius: 15px;
+  border: solid 1px #ccc;
+  overflow: hidden;
+
+}
+
+.roh_reviewaddressSection_header {
+  background-color: #e8eefd;
+  padding: 15px 20px;
+  border-bottom: 1px solid #0000000f;
+}
+
+.roh_reviewaddressSection_innercontent {
+  background-color: #e8eefd63;
+  padding: 20px;
+}
+
+.roh_reviewslectedservicesSection {
+  background: linear-gradient(to bottom, hsl(142 71% 97%), hsl(0 0% 100%));
+  border-radius: 15px;
+  border: solid 1px #ccc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.roh_reviewslectedservicesSection_header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #0000000f;
+}
+.roh_reviewslectedservicesSection_innercontent {
+  padding: 20px;
+}
+.roh_reviewslectedservicesSection_innercontent ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.roh_reviewslectedservicesSection_innercontent ul li:not(:last-child)  {
+  border-bottom:  solid 1px #e9e9e9;
+}
+
+.roh_reviewSection ul li,
+.roh_reviewaddressSection ul li,
+.roh_reviewslectedservicesSection ul li {
+  font-family: "DM Sans", sans-serif;
+}
+
+.btnOutlinePrimary {
+  background-color: #e3e3e8;
+  color: #1a1a1a;
+  border: none;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.btnOutlinePrimary:hover {
+  background-color: #e3e3e8cc;
+}
+
+.roh_reviewaddressfooter {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Fleet Table CSS Start   */
+.roh_fleet_table_wrapper .roh_fleet_table {
+  border: 1px solid #e2e4e9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.roh_fleet_table :global(.table) {
+  margin-bottom: 0;
+  border-bottom: transparent;
+}
+
+/* Header */
+.roh_fleet_table :global(thead.table-light th) {
+  color: #444;
+  font-weight: 600;
+  padding: 16px 24px;
+  font-size: 15px;
+  border-bottom: 1px solid #e2e4e9;
+  vertical-align: middle;
+}
+
+/* Body rows */
+.roh_fleet_table :global(tbody tr) {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e4e9;
+}
+
+.roh_fleet_table :global(tbody td) {
+  padding: 12px 24px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Quantity Buttons */
+.roh_fleet_table :global(.input-group) {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.roh_fleet_table :global(.input-group button) {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px !important;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e4e9;
+  background-color: #f9f9fb;
+  color: #000;
+  padding: 8px;
+  transition: all 0.3s;
+}
+
+.roh_fleet_table :global(.input-group button):hover {
+  background-color: #FF3600;
+  color: #fff;
+  border: 1px solid #ff3600
+}
+
+.roh_fleet_table :global(.input-group input) {
+  max-width: 50px !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none !important;
+  background: transparent !important;
+}
+
+.roh_fleet_table :global(.input-group input):focus,
+.roh_fleet_table :global(.input-group input):focus-visible {
+  border: none;
+  outline: none;
+  user-select: none;
+  box-shadow: none;
+}
+
+/* Total row */
+.roh_fleet_table :global(tbody tr:last-child td) {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.roh_fleet_table :global(tbody tr:last-child td:last-child) {
+  color: #ff3600;
+  text-align: right;
+}
+
+
+@media screen and (max-width:991px) {
+  .roh_beacome_host {
+    padding: 100px 20px 50px 20px;
+  }
+
+  .roh_info_reviewSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .roh_reviewslectedservicesSection {
+    margin-top: 4px;
+  }
+
+}
+
+.roh_btnAdeditem {
+  background-color: #FF3600;
+  color: #fff;
+  border: none;
+}
+
+.roh_btnAdeditem:hover {
+  background-color: #cc2f00;
+  color: #fff;
+}
+
+@media screen and (max-width:767px) {
+
+  .vehicleForm input,
+  .vehicleForm textarea,
+  .vehicleForm select {
+    font-size: 16px;
+  }
+
+  .roh_fleet_table :global(tbody td) {
+    padding: 10px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+
+  }
+
+  .roh_fleet_table :global(thead.table-light th) {
+    color: #444;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .roh_fleet_table :global(.input-group) {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .roh_fleet_table :global(.input-group button) {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px !important;
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .roh_fleet_table :global(.input-group input) {
+    padding: 4px;
+    font-size: 14px;
+
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .roh_fields .roh_inoputField {
+    width: 100%;
+  }
+
+  .pxmd5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .roh_sidebar_pricing h5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 35px;
+  }
+
+  .roh_check_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn {
+    font-size: 13px;
+    line-height: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .roh_chooseImage_comtent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .roh_reviewaddressfooter {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:550px) {
+  .roh_beacome_host {
+    padding: 65px 20px 10px 20px;
+  }
+  .roh_onboardin_heading {
+    font-size: 18px;
+  }
+  .main_steps {
+    font-size: 15px;
+  }
+  .progressBar {
+    font-size: 11px;
+  }
+  .titleSepertor {
+    margin-bottom: 20px !important
+  }
+  .roh_summery_wrapper {
+    padding: 0 !important;
+    border: none;
+  }
+  .formText {
+  font-size: 12px;
+  line-height: 1em;
+}
+.roh_reviewSection_header, .roh_reviewaddressSection_header, .roh_reviewslectedservicesSection_header {
+  padding: 10px 15px;
+}
+.roh_reviewSection h5,
+.roh_reviewaddressSection h5,
+.roh_reviewslectedservicesSection h5 {
+  font-size: 16px;
+}
+.roh_reviewSection ul li,
+.roh_reviewaddressSection ul li,
+.roh_reviewslectedservicesSection ul li {
+  font-size: 14px;
+}
+.roh_review_heading_content h4 {
+  font-size: 16px;
+}
+.roh_review_heading_content p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+}
+
+/* Standard Button State */
+.roh_brandtab {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5em;
+  background-color: #f9f8f5;
+  color: #7c7c7c;
+  border: 1px solid #eeebe8;
+  padding: 8px 16px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+/* Selected / Active Button State */
+.roh_brandtab_active {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #FF3600; /* Your Brand Orange */
+  color: #fff;
+  border: 1px solid #FF3600; /* Match background for clean look */
+  padding: 8px 16px;
+  border-radius: 6px;
+}

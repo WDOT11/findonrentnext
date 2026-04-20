@@ -1,0 +1,390 @@
+.roh_brandBlock img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.footer {
+  background: #fff;
+  padding: 48px 0 0 6px;
+  border-top: solid 1px #f3f3f3d9;
+}
+
+.roh_footer_container {
+  width: 100%;
+  max-width: 1320px;
+}
+
+/* Brand / left block */
+.roh_brandBlock {
+  max-width: 560px;
+}
+
+.logoLink {
+  display: inline-block;
+}
+
+.desc {
+  color: #5f6368;
+  font-size: 12px;
+  line-height: 1.83em;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+/* Social icons */
+.roh_social {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.roh_social li a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  background-color: #d6d6d6;
+  color: #454545;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.roh_social li a:hover {
+  transform: translateY(-2px);
+  background: #454545;
+  color: #d6d6d6;
+  border-color: #dcdfe3;
+}
+
+.roh_social img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Column titles + lists */
+.roh_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.roh_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.roh_list li a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.16em;
+  display: inline-block;
+  padding: 6px 0;
+  font-weight: 400;
+  color: #374151;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.roh_list li a:hover {
+  color: #ff3c00;
+  /* brand accent */
+}
+
+/* Copy bar */
+.roh_copyBar {
+  border-top: 1px solid #eee;
+  padding: 12px 0;
+  row-gap: 10px;
+}
+
+.roh_fineLinks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.roh_fineLink {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_fineLink:hover {
+  color: #ff3c00;
+  text-decoration: underline;
+}
+
+.roh_copyText {
+  text-align: right;
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.roh_copyText a {
+  color: #6b7280;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.roh_copyText a:hover {
+  color: #ff3c00;
+  text-decoration: underline;
+}
+
+.roh_active {
+  color: #ff4d4f !important;
+  font-weight: 500;
+}
+
+/* optional hover match */
+.roh_list a:hover,
+.roh_fineLink:hover {
+  color: #ff4d4f;
+}
+
+.roh_seo_section {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.roh_seo_heading h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.roh_seo_links_block {
+  line-height: 1.5;
+  color: #666;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.roh_seo_links_block a {
+  font-family: "DM Sans", sans-serif;
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-right: 8px;
+  border-right: 1px solid #ccc;
+}
+
+.roh_seo_links_block a:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.roh_seo_links_block a:hover {
+  color: #ff3600;
+  text-decoration: underline;
+}
+
+.roh_link_separator {
+  color: #ccc;
+  margin: 0 4px;
+}
+
+.roh_seo_tabs {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: 1px;
+}
+
+.roh_seo_tabs button {
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1em;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  border-right: 1px solid #e0e0e0;
+  border-left: none;
+  border-top: 2px solid transparent;
+  border-bottom: none;
+  background: #f7f7f7;
+  transition: all .3s ease;
+   flex: 0 0 auto;
+   white-space: nowrap;
+}
+
+.roh_seo_tabs button:last-child {
+  border-right: none;
+}
+
+.roh_seo_tabs button:hover {
+  color: #ff3600;
+  background: #f7f7f7;
+}
+
+.roh_seo_tabs button.active_tab {
+  background: #fff;
+  border-top: 2px solid #ff3600;
+  color: #000;
+}
+
+/* Footer nav button */
+.roh_bottomNav {
+  position: fixed;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+  z-index: 50;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+}
+
+.roh_bottomNav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 11px;
+  font-weight: 500;
+  width: 60px;
+}
+.roh_bottomNav a:hover {
+  color: #ff4d4f;
+  text-decoration: none;
+}
+.roh_bottomNav a.roh_active {
+  color: #ff4d4f;
+  text-decoration: none;
+}
+
+.roh_category_block {
+  margin-bottom: 20px;
+}
+
+.roh_category_heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.roh_category_links a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.roh_show_more_btn {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.roh_show_more_btn:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper */
+.roh_category_links {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+/* Collapsed state */
+.collapsed {
+  max-height: auto; /* approx height of 20 links */
+  opacity: 1;
+}
+
+/* Expanded state */
+.expanded {
+  max-height: auto; /* big number so all links fit */
+  opacity: 1;
+}
+.roh_seo_section {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(40px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    max-height 0.5s ease;
+}
+
+.roh_seo_section.visible {
+  opacity: 1;
+  max-height: max-content;
+  transform: translateY(0);
+}
+.roh_bottomNavWrapper nav.roh_bottomNav a font {
+  font-size: 8px;
+}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .roh_copyText {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .roh_copyBar {
+    row-gap: 8px;
+  }
+
+  .roh_fineLink {
+    font-size: 11px;
+  }
+
+  .roh_copyText {
+    font-size: 11px;
+  }
+.footer {
+  padding: 30px 0 1px 0px;
+}
+.roh_seo_section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width:575px) {
+.roh_bottomNavWrapper {
+  margin-top: 60px;
+}
+}

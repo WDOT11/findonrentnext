@@ -1,0 +1,252 @@
+.roh_prouct_hero_wrap {
+  margin-top: 86px;
+}
+
+.roh_prouct_hero_inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 15px;
+}
+
+.roh_prouct_hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  min-height: max-content;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* Overlay div */
+.roh_image_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* Image */
+.roh_hero_img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay div */
+.roh_image_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.30);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.Zindex {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.hero_heading h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+    color: #fff;
+    text-align: center;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+}
+.hero_description {
+    margin-top: 19px;
+}
+
+.hero_description {
+    color: #fff;
+}
+.global_heading {
+    font-size: 16px;
+}
+.hero_btns {
+    margin-top: 25px;
+}
+.extrabtn {
+
+
+}
+ .hero_btns .extrabtn button {
+    background: #FF3600;
+    color: #fff;
+}
+
+.extrabtn button {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+     padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .4s
+ease-in-out;
+}
+.button_custom button, .extrabtn button {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex
+;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .4s
+ease-in-out;
+}
+.hero_btns .circl_btn button, .hero_btns .button_custom button {
+    background: #ffffff;
+    color: #000000;
+}
+.circl_btn button {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .3s
+ease-in-out;
+    background: #ffffff;
+    color: #000000;
+}
+.circl_btn button svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s
+ease-in-out;
+}
+.hero_btns .button_custom:hover~.circl_btn button, .hero_btns .circl_btn button:hover {
+    background: #FF3600;
+    color: #fff;
+}
+.button_custom:hover~.circl_btn button svg {
+    transform: rotate(0deg);
+}
+.hero_btns .button_custom:hover~.circl_btn button svg path, .hero_btns .circl_btn button:hover svg path {
+    fill: #fff;
+}
+
+
+
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .roh_prouct_hero {
+        padding: 100px 10px;
+    }
+    .hero_heading h1 {
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .roh_prouct_hero_wrap {
+    padding-top: 20px;
+    margin-top: 50px;
+    background-color: #FFF8F6;
+}
+}
+
+@media screen and (max-width:767px) {
+
+     .roh_prouct_hero {
+    padding: 50px 10px;
+  }
+    .hero_heading h1 {
+        font-size: 32px;
+    }
+     .roh_prouct_hero_wrap {
+    padding-top: 20px;
+    margin-top: 50px;
+    background-color: #FFF8F6;
+}
+.roh_prouct_hero_inner {
+    padding-inline: 10px;
+}
+}
+
+@media screen and (max-width:440px) {
+    .button_custom button, .extrabtn button {
+        font-size: 11px;
+    }
+    .circl_btn button svg {
+        width: 25px;
+        height: 25px;
+    }
+        .hero_btns {
+            gap: 8px !important;
+        }
+}
+

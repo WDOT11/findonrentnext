@@ -1,0 +1,32 @@
+.roh_help_wrap {
+	background-color: #FFF8F6;
+	padding: 96px 20px;
+}
+.help_wrap {
+	    background-color: #fff;
+	    border-radius: 30px;
+	    padding: 40px;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 15px;
+	}
+	.help_svg img {
+		width: 60px;
+		height: 60px;
+	}
+    .second_heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .help_wrap {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+.roh_help_wrap {
+	padding: 48px 15px;
+}
+}

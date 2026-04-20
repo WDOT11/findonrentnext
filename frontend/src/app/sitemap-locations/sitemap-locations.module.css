@@ -1,0 +1,90 @@
+.fleetswrap_inner {
+  padding: 96px 20px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #FFF8F6;
+}
+
+.roh_container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+
+.roh_seo_links_section {
+  background: #ffff;
+  padding: 40px 40px;
+  max-width: 1280px;
+  border-radius: 15px;
+  margin: 48px auto 0 auto;
+}
+.roh_seo_location_groupWrapper {
+  margin-bottom: clamp(30px, 4vw, 48px);
+}
+.roh_seo_location_groupWrapper:last-child {
+  margin-bottom: 0;
+}
+.roh_seo_links_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+.roh_seo_links_section h2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(24px, 3vw, 28px);
+}
+.roh_seo_links_section h3 a {
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.roh_seo_links_section h3 a:hover, .roh_seo_links_section h2 a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+.roh_seo_links_block a {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4B5563;
+  line-height: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.roh_seo_links_block a:hover {
+  background: #F3F4F6;
+  color: #111827;
+  border-color: #D1D5DB;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .roh_seo_links_section {
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .fleetswrap_inner {
+    padding: 30px 10px;
+  }
+
+  .roh_seo_links_section  {
+    padding: 20px 15px;
+  }
+  .roh_seo_links_block {
+    gap: 8px;
+  }
+  .roh_seo_links_block a {
+    width: calc(50% - 8px);
+  }
+
+}

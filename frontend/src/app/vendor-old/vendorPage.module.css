@@ -1,0 +1,259 @@
+/* Vendor profile top section CSS */
+
+.roh_vendorProfile_inner {
+    background-color: #FFF8F6;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+}
+
+.roh_img_wrap_single {
+    width: 300px;
+}
+
+.roh_img_wrap_single img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.roh_img_content_right {
+    padding: 15px;
+    width: calc(100% - 300px);
+}
+
+.roh_img_contentinner {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.roh_vendorUsername {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+.roh_verifiedbox img {
+    width: 35px;
+    height: 35px;
+}
+
+.roh_about_user {
+    font-size: 18px;
+    color: #616161;
+    line-height: 1.2em;
+}
+
+ul.roh_contactinfo {
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+ul.roh_contactinfo li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+}
+
+ul.roh_contactinfo li a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #616161;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+ul.roh_solial_medialink {
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 200px;
+    justify-content: space-between;
+}
+
+ul.roh_solial_medialink li {
+    list-style: none;
+}
+
+ul.roh_solial_medialink li a img {
+    width: 25px;
+    height: 25px;
+}
+
+ul.roh_solial_medialink li a {
+    text-decoration: none;
+    padding: 10px;
+    background: #ffffff;
+    line-height: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0 8px 28px rgb(66 66 66 / 10%);
+    transition: all 0.3s ease-in-out;
+}
+
+ul.roh_solial_medialink li a:hover {
+    background-color: #f3fcff;
+}
+
+
+/* Vendor service category Box*/
+
+.roh_verndorService_category {
+    border-top: 1px solid #ccc;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.roh_categoryContent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.roh_categoryContent button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.roh_back_circle {
+    position: relative;
+    width: 100%;
+}
+
+.roh_back_circle img {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.roh_back_circle::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    background-color: #FF3600;
+    opacity: 10%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.roh_categoryContent a:hover .roh_back_circle::before {
+    opacity: 40%;
+}
+
+button.roh_categoryBox {
+    box-shadow: 0 8px 24px rgba(255, 107, 107, 0.1);
+    padding: 10px 25px 10px 25px;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+
+button.roh_categoryBox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #fffefe;
+}
+
+/* About Us / Business Overview */
+
+.roh_general_info_wrap {
+    padding-block: 30px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.roh_check_list {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.roh_check_list li {
+    list-style: none;
+}
+
+.roh_check_list li .roh_list {
+    text-decoration: none;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #616161;
+}
+
+.roh_check_list li .roh_list img {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+}
+
+/* Testimonials Sections */
+
+.roh_general_info_twowrap {
+    padding-block: 30px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .roh_vendorProfile_inner {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .roh_img_content_right {
+        width: 100%;
+    }
+
+    .roh_img_wrap_single {
+        width: 100%;
+    }
+
+    .roh_vendorUsername {
+        font-size: 20px;
+    }
+
+    .roh_verifiedbox img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .roh_img_wrap_single img {
+        object-fit: cover;
+        object-position: top;
+        border-radius: 15px;
+        aspect-ratio: auto;
+        max-width: 400px;
+        height: 400px;
+    }
+}

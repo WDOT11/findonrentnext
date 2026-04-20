@@ -1,0 +1,59 @@
+/* ========================================================== */
+/* category.module.css - ESSENTIAL STYLES */
+/* ========================================================== */
+
+/* --- 1. MODAL STRUCTURE FIX --- */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    overflow-y: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 2. LIST PAGE AESTHETICS --- */
+
+.categoryImage {
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.2s ease-in-out;
+    display: block;
+}
+
+.categoryImage:hover {
+    transform: scale(1.05);
+}
+
+/* --- 3. VIEW MODAL SPECIFIC STYLES --- */
+
+.viewImage {
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.statusActive {
+    background-color: #28a745 !important;
+    color: white;
+    padding: .25em .4em;
+    border-radius: .25rem;
+    font-size: 75%;
+}
+
+.statusInactive {
+    background-color: #dc3545 !important;
+    color: white;
+    padding: .25em .4em;
+    border-radius: .25rem;
+    font-size: 75%;
+}

@@ -1,0 +1,643 @@
+/* Hero Section  */
+.roh_post_hero_wrap {
+  margin-top: 86px;
+}
+
+.roh_post_hero_inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 15px;
+}
+
+.roh_post_hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  min-height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.roh_post_hero::before {
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  content: '';
+  background-image: linear-gradient(180deg, #0000002e 13.62%, #0000004a 68.99%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* Image */
+.roh_hero_img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay div */
+.roh_image_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.30);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.roh_Zindex {
+  z-index: 2;
+  position: relative;
+  text-align: left;
+}
+
+.roh_hero_left_content {
+  max-width: 800px;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.roh_backLink {
+  font-size: 14px;
+  color: #ffffffcc;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.roh_hero_title {
+  font-family: "Epilogue", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.roh_meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.roh_hero_desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+.roh_hero_description {
+  margin-top: 19px;
+  color: #fff;
+}
+
+/* Hero Section  CSS END */
+
+.roh_singlePost_innerContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 48px 15px;
+  background: #fff;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 100px 0;
+  color: #555;
+}
+
+
+
+.roh_blog_content {
+  margin-bottom: 60px;
+}
+
+.roh_related_section {
+  margin-top: 40px;
+}
+
+.roh_related_section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.roh_related_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.roh_related_card {
+  background: #f8f9fb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.roh_related_card:hover {
+  transform: translateY(-5px);
+}
+
+.roh_related_img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.roh_img_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.roh_related_info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 200px);
+}
+
+.roh_related_info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.roh_related_date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.roh_redBtns {
+  gap: 8px;
+}
+
+.roh_redBtns .roh_circl_btn button {
+  background: #FF3600;
+  color: #fff;
+  display: flex;
+  line-height: 1em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.roh_button_custom button {
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  color: #FF3600;
+}
+
+.roh_button_custom button:hover {
+  color: #000;
+}
+
+.roh_related_card:hover .roh_button_custom button {
+  color: #000;
+}
+
+.roh_related_card:hover .roh_circl_btn button svg {
+  transform: rotate(0deg);
+}
+
+.roh_related_card:hover:hover .roh_circl_btn button {
+  background-color: #000;
+}
+
+.roh_circl_btn button {
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn button svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-30deg);
+  transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn button:hover svg,
+.roh_button_custom:hover~.roh_circl_btn button svg {
+  transform: rotate(0deg);
+}
+
+.roh_redBtns .roh_circl_btn button:hover,
+.roh_redBtns .roh_button_custom:hover~.roh_circl_btn button {
+  background-color: #000;
+}
+
+.roh_provider_section_wrapper {
+  background-color: #F8FAFC;
+  padding: 48px 20px;
+  border-radius: 16px;
+}
+
+.roh_section_header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.roh_providers_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.roh_provider_card {
+  background: #fff;
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.roh_provider_card:hover {
+  border-color: #d1d5db;
+  text-decoration: none;
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.roh_provider_img {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #F3F4F6;
+}
+
+.roh_provider_card_top {
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #F3F4F6;
+  background: #fff;
+  position: relative;
+  ;
+}
+
+.roh_provider_card .roh_provider_badge {
+  margin-bottom: 6px;
+  line-height: 1em;
+}
+
+.not_verified img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.roh_provider_badge img {
+  width: 20px;
+  height: auto;
+}
+
+.roh_provider_card_info {
+  flex: 1;
+}
+
+.roh_provider_card_info h2 {
+  font-family: var(--font-family-body);
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.roh_provider_card_info a {
+  text-decoration: none;
+}
+
+.roh_provider_card_info a:hover {
+  text-decoration: none;
+}
+
+.roh_provider_card_desc {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.5;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.roh_provider_card_body {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.roh_meta_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.roh_meta_itemPricewrap {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px dashed #E5E7EB;
+}
+
+.roh_meta_label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6B7280;
+}
+
+.roh_meta_value {
+  font-weight: 600;
+  color: #111827;
+  text-align: end;
+  text-transform: capitalize;
+}
+
+.roh_price_tag {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_provider_card_footer {
+  padding: 16px 24px 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.roh_btn_card_primary {
+  background: #F9FAFB;
+  color: #111827;
+  border: 1px solid #E5E7EB;
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.roh_btn_card_primary:hover {
+  background: #E5E7EB;
+}
+
+.roh_btn_card_secondary {
+  background: #111827;
+  color: #fff;
+  border: 1px solid #111827;
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.roh_btn_card_secondary:hover {
+  background: #F3F4F6;
+  text-decoration: none;
+  border: 1px solid #E5E7EB;
+  color: #374151;
+}
+
+.roh_call_for_price {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  line-height: 1em;
+  gap: 8px;
+  transition: all .3s ease;
+}
+
+.roh_call_for_price:hover {
+  color: #ff3600;
+}
+
+.roh_view_all_container {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.roh_btn_view_all {
+  background: #ffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #E5E7EB;
+  color: #111827;
+  padding: 10px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.roh_btn_view_all:hover {
+  background-color: #FFF5F2;
+  border: 1px solid #ff3600;
+  color: #ff3600;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+
+/* Related post CSS */
+.roh_related_card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.roh_related_card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+/* Ripple Base */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  pointer-events: none;
+  width: 120px;
+  height: 120px;
+}
+
+/* Ripple Animation */
+.ripple_effect {
+  animation: rippleDrop 0.6s linear forwards;
+}
+
+/** Breadcrumb */
+.roh_breadcrumb_wrap {
+  margin: 24px  0 12px 0;
+}
+
+.roh_breadcrumb_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+
+.roh_breadcrumb_list li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.roh_breadcrumb_list li {
+  color: #ff3600;
+}
+.roh_breadcrumb_list a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.roh_breadcrumb_list a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+.roh_breadcrumb_list li a:hover {
+  color: #ff3600;
+}
+
+.roh_breadcrumb_list .roh_breadcrumb_sep {
+  color: #ffff;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+
+@keyframes rippleDrop {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .roh_post_hero {
+    padding: 80px 10px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .roh_hero_left_content {
+    padding: 0px;
+  }
+
+  .roh_post_hero {
+    padding: 48px 10px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .roh_related_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roh_hero_title {
+    font-size: 28px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .roh_related_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+@media screen and (max-width:550px) {
+  .roh_breadcrumb_list {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+}

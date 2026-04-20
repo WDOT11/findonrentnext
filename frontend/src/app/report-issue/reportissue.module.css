@@ -1,0 +1,357 @@
+.roh_hero_wrap {
+    position: relative;
+}
+
+
+.roh_hero_section {
+    background-image: url('/images/homepg/bg-img-3.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.roh_hero_container {
+    width: 100%;
+    max-width: 1320px;
+    padding: clamp(100px, 13vw, 160px) 16px clamp(75px, 7vw, 100px) 16px;
+}
+
+.roh_hero_content {
+    max-width: 800px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.roh_pLarge {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.roh_our_mission_wrap,
+.roh_why_we_started_wrap,
+.roh_our_vision_wrap {
+    padding: 96px 20px;
+    background-color: #fff;
+
+}
+
+/* When to Report an Issue */
+
+.roh_report_issue_wrapperMain {
+    background-color: #FFF8F6;
+    padding: 0px 20px 96px;
+}
+
+.roh_report_issue_content {
+    max-width: 1080px;
+    margin: -60px auto 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    z-index: 10;
+}
+
+.roh_content_card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.roh_section_header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+}
+
+.roh_section_icon {
+    width: 44px;
+    height: 44px;
+    background: #F6F9FF;
+    border-radius: 12px;
+    color: #ff3600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roh_section_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.roh_report_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.roh_report_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background: #FAFAFA;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.roh_report_item:hover {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.roh_item_icon_circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #ff3600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roh_item_text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.4;
+}
+
+.roh_section_note {
+    margin-top: 24px;
+    padding: 16px;
+    background: #F3F4F6;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #4B5563;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* How to Report */
+
+.roh_split_layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.roh_info_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+}
+
+.roh_info_list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.roh_cta_box {
+    background: #FFF8F6;
+    border: 1px solid #FFE4DD;
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+}
+
+.roh_redbtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #ff3600;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 28px;
+    border-radius: 99px;
+    text-decoration: none;
+    margin: 16px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+.roh_redbtn:hover {
+    background-color: #111827;
+}
+/* What Happens After You Report  */
+.roh_process_timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+}
+
+.roh_process_card {
+    background: #FAFAFA;
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    position: relative;
+    height: 100%;
+}
+
+.roh_step_badge {
+    width: 32px;
+    height: 32px;
+    background: #ff3600;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.roh_step_desc {
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.5;
+}
+
+.roh_privacy_banner {
+    margin-top: 32px;
+    padding: 24px;
+    background: #F0F9FF;
+    border: 1px solid #BAE6FD;
+    border-radius: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.roh_privacy_icon {
+    color: #0284C7;
+    background: white;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+/* Thank You for Helping Us Improve */
+
+.roh_thank_you_card {
+    text-align: center;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #6b7280;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width:991px) {
+    .roh_why_choose_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .roh_content_card {
+        padding: 24px;
+    }
+    .roh_benefit_card {
+        gap: 8px;
+    }
+    .roh_section_header {
+        margin-bottom: 10px;
+        padding-bottom: 24px;
+    }
+    .roh_process_timeline{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .roh_pLarge {
+        font-size: 16px;
+    }
+
+    .roh_report_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .roh_split_layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .roh_report_issue_wrapperMain {
+        padding: 0 15px 48px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .roh_why_choose_grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 24px;
+    }
+
+    .roh_report_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}

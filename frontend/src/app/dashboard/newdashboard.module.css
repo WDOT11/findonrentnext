@@ -1,0 +1,1889 @@
+.dashboardContainer * {
+  font-family: "DM Sans", sans-serif;
+}
+/* ===== Layout ===== */
+.dashboardContainer {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100dvh;
+  background-color: #000000;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+.sidebarHeader {
+  padding: 20PX 10px;
+}
+
+.sidebarHeader h5 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 10px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1em;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  background-color: #3b3b3bfa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navItem:hover {
+  background: #FF3600;
+  color: #ffff;
+}
+
+.active {
+  background: #FF3600;
+  color: white;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.mainContent {
+  margin-left: 260px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.roh_dashboar_header {
+  z-index: 10;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 2px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  padding: 15px 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.roh_dashboar_header_btns {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.roh_dashboar_header_btns a {
+  padding: 12px 25px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1em;
+  color: #fff;
+  background: #FF3600;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.roh_dashboar_header_btns a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.roh_dashboardLogot_btn {
+  position: fixed;
+  bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #ffff;
+  color: #000;
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 240px;
+}
+
+.roh_dashboardLogot_btn:hover {
+  background-color: #ff3600;
+  color: #ffff;
+}
+
+
+.sidebarToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1em;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.headerTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contentWrapper {
+  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* ===== Page Titles ===== */
+.viewSection {
+  display: block;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pageSubtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* ===== Dashboard Stats ===== */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.statTitle {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.statIcon {
+  font-size: 1.25rem;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.red {
+  color: #dc2626;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.purple {
+  color: #9333ea;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ===== Cards & Sections ===== */
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Activity Items ===== */
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.activityIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.activityTitle {
+  font-weight: 500;
+  margin-bottom: 0PX;
+}
+
+.activityTime {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0px;
+}
+
+/* ===== Items Grid ===== */
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemType {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.itemLocation {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+
+/* ===== Form ===== */
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.formGroup input {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+
+.btnOutline {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.btnOutline:hover {
+  background: #f3f4f6;
+}
+
+.btnDanger {
+  background: #de2e00;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+.btnDanger:hover {
+  background: #b93f1f;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}
+
+/* ===== Text ===== */
+.textMuted {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* ===== Cards & Sections ===== */
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0;
+  /* Updated: remove big padding */
+  overflow: hidden;
+  /* prevents border break */
+}
+
+/* ===== User Details Table Style ===== */
+.detailRow {
+  display: grid;
+  grid-template-columns: 65px auto;
+  gap: 20px;
+  padding: 15px 10px 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.detailRow:last-child {
+  border-bottom: none;
+}
+
+.detailLabel {
+  color: #6a6a6a;
+  font-size: 0.95rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+.detailValue {
+  color: #111;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+
+.itemCard {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemCard:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.itemHeader {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.itemIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 109, 39, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ff6d27;
+}
+
+.itemType {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: capitalize;
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.itemLocation {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.itemPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff3600;
+  margin-top: 10px;
+}
+
+.itemActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+
+.btnDanger {
+  background: #de2e00;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.btnDanger:hover {
+  background: #b93f1f;
+}
+
+/* ===== Edit Profile Form ===== */
+/* .editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 2.25rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+} */
+
+.formRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.formGroup input {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: #dbdfeb1f;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus {
+  background: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.formActions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+
+.btnPrimary {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  font-family: "DM Sans", sans-serif;
+  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 1em;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.btnPrimary:hover {
+  background-color: #4f4f4f;
+}
+
+.btnOutline {
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  color: #333;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 1em;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.btnOutline:hover {
+  background: #f4f4f4;
+}
+
+
+/* ===== Settings View Premium Style ===== */
+
+.viewSection {
+  background: #FFF8F6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: 100%;
+}
+
+/* Make card match screenshot style */
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin-top: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Center text like screenshot */
+.textMuted {
+  text-align: left;
+  color: #6b6b6b;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* Center button group */
+.buttonGroup {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Pills Style Buttons */
+.btnOutline {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  color: #333;
+  border-radius: 10px;
+  padding: 9px 25px;
+  font-weight: 600;
+  line-height: 1em;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.btnOutline:hover {
+  background: #f5f5f5;
+}
+
+/* Active tab style (use when needed) */
+.btnOutline.activeBtn {
+  background: #ff6d27;
+  border-color: #ff6d27;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 109, 39, 0.35);
+}
+
+
+/* ===== Sidebar Backdrop ===== */
+.sidebarBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 150;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.sidebarBackdropShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.errorText {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+
+/** Item listing css */
+.rohhostpnlhostinh_container {
+  margin: 180px 20px 100px 20px;
+}
+
+.rohhostpnlhostinh_tabs {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.rohhostpnlhostinh_tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border: 1px solid transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  outline: none;
+}
+
+.rohhostpnlhostinh_tab:hover {
+  background-color: #f6f6f6;
+}
+
+.rohhostpnlhostinh_active {
+  border-color: #e3e3e3;
+  border-bottom-color: white;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #fff;
+}
+
+.rohhostpnlhostinh_tabContentWrapper {
+  padding: 20px;
+  margin-top: -1px;
+  /* merge with active tab border */
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 0 8px 8px 8px;
+}
+
+.rohhostpnlhostinh_tabContent {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/** Hosting items css */
+.rohhostinglist_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.rohhostinglist_card {
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: start;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* thoda fixed height taaki balance lage */
+}
+
+.rohhostinglist_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.rohhostinglist_image {
+  width: 100%;
+  height: 220px;
+  /* pehle 180 tha, ab bada */
+  margin-bottom: 12px;
+  background: #f9fafb;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rohhostinglist_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* image cut nahi hoga */
+  border-radius: 12px;
+}
+
+.rohhostinglist_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  color: #111827;
+}
+
+.rohhostinglist_category,
+.rohhostinglist_reg {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 2px 0;
+}
+
+.rohhostinglist_actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.rohhostinglist_view,
+.rohhostinglist_edit,
+.rohhostinglist_delete,
+.rohhostinglist_reactivate {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.rohhostinglist_view {
+  background-color: #000;
+  color: #fff;
+}
+.rohhostinglist_view:hover {
+  background-color: #4f4f4f;
+}
+.rohhostinglist_edit {
+  background-color: #919191;
+  color: #fff;
+}
+.rohhostinglist_edit:hover {
+  background: #7b7979;
+  color: #fff;
+}
+
+.rohhostinglist_delete {
+  background-color: #de2e00;
+  color: #fff;
+}
+
+.rohhostinglist_delete:hover {
+  background: #b93f1f;
+  color: #fff;
+}
+
+.rohhostinglist_reactivate {
+  background-color: #059920;
+  color: #fff;
+}
+.rohhostinglist_reactivate:hover {
+  background-color: #de2e00;
+  color: #fff;
+}
+
+
+
+/** Modal css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+/** Slider css */
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 220px;
+  /* image height sync with card image */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sliderControls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  transform: translateY(-50%);
+}
+
+.sliderControls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.sliderControls button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* -------RR CSS------------- */
+
+.roh_hosting_viewDetails_inner {
+  background-color: #FFF8F6;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.roh_hostingOwner_info {
+  margin: 20px auto;
+}
+
+.roh_sidebar_pricing {
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.roh_sidebar_pricing h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+}
+
+.roh_sidebar_pricing h3 span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.roh_fleets_single_sidebar_list {
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.roh_feets_data_list span,
+.roh_content_layer span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+
+.roh_content_layer {
+  margin-bottom: 25px;
+}
+
+.roh_feets_data_list img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.roh_productPrice {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: dashed 1px #000;
+}
+
+.roh_productPrice .roh_content_layer {
+  margin-bottom: 0px;
+}
+
+.roh_check_list li {
+  list-style: none;
+}
+
+.roh_check_list li .roh_featureList img {
+  width: 28px;
+  height: 28px;
+}
+
+.roh_featureList,
+.roh_premiumFeaturelist {
+  text-decoration: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.roh_featureList h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.roh_featureList span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.roh_check_list {
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+
+/* Footer CSS  */
+
+.roh_dashboar_footer {
+  padding: 15px 30px;
+  margin: auto;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  position: sticky;
+  bottom: -1px;
+}
+
+.roh_copyBar {
+  margin: 0;
+  row-gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.roh_fineLink {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_fineLink:hover {
+  color: #ff3600;
+}
+
+.roh_copyText {
+  text-align: right;
+  margin: 0;
+  color: #6b7280;
+  font-size: 11px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.roh_copyText a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.roh_copyText a:hover {
+  color: #ff3c00;
+}
+
+
+
+/* Recentlt View Remove Undo Button CSS  */
+
+
+
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.itemThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover .itemThumb {
+  transform: scale(1.08);
+}
+
+
+.undoToast {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.undoBtn {
+  background: none;
+  border: none;
+  color: #00b7ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.roh_business_checkbox input[type="checkbox"]:focus {
+  outline: none ;
+  border: none ;
+  box-shadow: none;
+}
+.roh_business_checkbox input {
+  width: 14px;
+  height: 14px;
+}
+
+/* Responsive CSS Screens */
+@media (max-width: 991px) {
+  .rohhostpnlhostinh_container {
+    margin: 150px 20px 100px 20px;
+  }
+
+  .roh_check_list li .roh_featureList img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .roh_featureList h6 {
+    font-size: 14px;
+  }
+
+  .editForm {
+    gap: 1rem;
+  }
+
+  .formRow {
+    gap: 10px;
+  }
+
+  .contentWrapper {
+    padding: 0px;
+  }
+
+  .viewSection {
+    padding: 40px 16px;
+    border-radius: 0;
+  }
+
+  /* Dashboard Tab  */
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Recently Viewed Tab  */
+  .itemsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+
+  .itemHeader {
+    gap: 0.5rem;
+    margin-bottom: 10px;
+  }
+
+  .itemHeader .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 125px;
+  }
+
+  .itemTitle {
+    font-size: 16px;
+  }
+
+  .itemPrice {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .itemLocation {
+    margin: 0;
+  }
+
+  .itemActions {
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 10px;
+  }
+
+  .itemActions .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: auto;
+    border-radius: 4px;
+  }
+
+  /* Item Listing Tab  */
+
+  .rohhostinglist_container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+    padding: 0px;
+  }
+
+  .rohhostinglist_image {
+    height: 125px;
+  }
+  .rohhostinglist_title {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+  .rohhostinglist_actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.rohhostinglist_view,
+.rohhostinglist_edit,
+.rohhostinglist_delete,
+.rohhostinglist_reactivate {
+  padding: 6px;
+  font-size: 12px;
+}
+}
+
+@media (max-width: 768px) {
+  .rohhostpnlhostinh_container {
+    margin: 100px 20px 50px 20px;
+    padding: 30px 15px 30px 15px !important;
+  }
+
+  .contentWrapper {
+    padding: 20px;
+  }
+
+  .mainContent {
+    margin-left: 0;
+  }
+
+  /* Side Bar  */
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
+  }
+
+  .sidebarMobileOpen {
+    transform: translateX(0);
+  }
+
+  .roh_dashboar_header {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 20px;
+  }
+  .roh_dashboar_header_btns a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .mainContent {
+    margin-left: 0 !important;
+  }
+
+  .sidebarToggle {
+    display: block;
+  }
+
+  .pageTitle {
+    font-size: 26px;
+  }
+
+  .sidebarToggle {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .roh_dashboar_header {
+    padding: 10px 16px;
+    gap: 10px;
+  }
+
+  .roh_dashboar_header_btns a {
+    padding: 7px 12px;
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .viewSection {
+    padding: 40px 16px;
+    border-radius: 0;
+  }
+
+  /* Dashboard Tab   */
+  .pageTitle {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .contentWrapper {
+    padding: 0px;
+  }
+
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .statCard {
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .pageSubtitle {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .statHeader {
+    margin-bottom: 0.5rem;
+  }
+
+  .statValue {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+
+  .sectionTitle {
+    margin-bottom: 0rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* User Details Tab  */
+  .detailLabel {
+    font-size: 14px;
+  }
+
+  .detailValue {
+    font-size: 14px;
+  }
+
+  /* Recently Viewed Tab  */
+
+  .itemsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+
+   /* Recently Viewed Tab  */
+  .itemsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+
+  /* Edit Profile Tab  */
+
+  /* .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .formGroup {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .formGroup input {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .formGroup label {
+    font-size: 16px;
+  } */
+
+
+  /* Item Listing Tab  */
+
+  .rohhostinglist_container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+    padding: 0px;
+  }
+
+  .rohhostinglist_image {
+    height: 100px;
+  }
+
+  /* Footer CSS  */
+
+  .roh_dashboar_footer {
+    padding: 8px 20px;
+  }
+
+  .roh_copyBar {
+    gap: 4px;
+  }
+
+  .roh_copyText {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .roh_fineLink {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .rohhostpnlhostinh_tab {
+    flex: 1 1 auto;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .roh_check_list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+
+  .buttonGroup {
+    flex-wrap: wrap;
+  }
+
+  .itemHeader .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+
+  .itemCard, .rohhostinglist_card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+     /* Recently Viewed Tab  */
+  .itemsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+  .itemTitle, .rohhostinglist_title {
+        font-size: 14px;
+        margin: 2px 0px;
+}
+.itemPrice, .itemLocation, .rohhostinglist_category, .rohhostinglist_reg {
+        font-size: 12px;
+      }
+   /* Item Listing Tab  */
+
+  .rohhostinglist_container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    gap: 0.8rem;
+    padding: 0px;
+  }
+   /* Edit Profile Tab  */
+   .editForm {
+    gap: 16px;
+   }
+    .formRow {
+      gap: 8px;
+    }
+   .formRow4Mob {
+     grid-template-columns: 1fr;
+     }
+
+  .formGroup input {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .formGroup label {
+    font-size: 16px;
+    line-height: 1em;
+  }
+
+}
+
+
+
+/* ================================
+   EDIT MODAL WRAPPER
+   ================================ */
+.rohvhedit_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Large modal box */
+.rohvhedit_modalBox {
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow-y: auto;
+  padding: 25px 30px;
+  position: relative;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  animation: fadeInScale 0.25s ease-out;
+}
+
+@keyframes fadeInScale {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* Close button */
+.rohvhedit_closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #000;
+  color: #fff;
+  border: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.rohvhedit_closeBtn:hover {
+  background: #c0392b;
+}
+
+/* Heading */
+.rohvhedit_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* ================================
+   FORM GRID
+   ================================ */
+
+.rohvhedit_formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 25px;
+  margin-top: 20px;
+}
+
+.rohvhedit_fullRow {
+  grid-column: 1 / 3;
+}
+
+/* Labels */
+.rohvhedit_label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Inputs */
+.rohvhedit_input,
+.rohvhedit_textarea,
+.rohvhedit_select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  outline: none;
+  background-color: #dbdfeb1f;
+  transition: border-color 0.2s ease;
+}
+
+.rohvhedit_input:focus,
+.rohvhedit_select:focus,
+.rohvhedit_textarea:focus {
+ background: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+/* Textarea */
+.rohvhedit_textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ================================
+   FOOTER BUTTONS
+   ================================ */
+
+.rohvhedit_footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  gap: 12px;
+}
+
+.rohvhedit_cancelBtn {
+    background: #c5c5c5;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 1em;
+    border: none;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.rohvhedit_cancelBtn:hover {
+  background: #a8a8a8;
+}
+
+.rohvhedit_saveBtn {
+    background: #ff3600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 1em;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.rohvhedit_saveBtn:hover {
+  background: #000;
+}
+
+.rohvhedit_saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rohvhedit_error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.rohvhedit_imagesWrap {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.roh_dashboard_addImage {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #0000009e;
+    transition: all 0.3s !important;
+    cursor: pointer;
+  }
+  .roh_dashboard_addImage:hover {
+    box-shadow: 0px 0px 5px 0px rgb(255 62 62);
+  }
+
+  input.roh_dashboard_addImage [type="file"] {
+   cursor: pointer;
+   display: none;
+  }
+  .rohvhedit_imageThumb {
+    position: relative;
+  }
+  .rohvhedit_imageRemove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #de2e00;
+    color: #fff;
+    border: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+  }
+  .rohvhedit_imageRemove:hover {
+    background: #b93f1f;
+  }
+
+.rohvhedit_imageItem {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: 200px;
+    position: relative;
+  }
+  .rohvhedit_imageItem img {
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+.roh_additems_uploadImage {
+  border-radius: 15px;
+    padding: 20px;
+    border: 2px dashed #e5e1dc;
+    text-align: center;
+    cursor: pointer;
+}
+.roh_additems_uploadImage:hover {
+  border: 2px dashed #ff3600;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+
+  @media screen and (max-width:991px) {
+    .rohvhedit_modalBox {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
+      max-height: 100%;
+      padding: 20px 15px;
+    }
+  }
+
+
+  /** main dashboard page*/
+  .headerSmart h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.smartLine {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.smartTags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.smartTags span {
+  background: #f4f4f4;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #444;
+}
+
+.smartInsights {
+  margin-top: 18px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #444;
+}
+
+.smartInsights p {
+  margin: 4px 0;
+}
+.roh_backToHome {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #ff3600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(19, 12, 12, 0.192);
+  transition: all 0.3s;
+}
+.roh_backToHome:hover{
+  background: #ff3600;
+  color: #fff;
+
+}

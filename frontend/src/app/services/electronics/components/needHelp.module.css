@@ -1,0 +1,66 @@
+.roh_help_wrap {
+	background-color: #FFF8F6;
+	padding: 96px 20px;
+}
+.help_wrap {
+	    background-color: #fff;
+	    border-radius: 30px;
+	    padding: 40px;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 15px;
+	}
+	.help_svg {
+    width: max-content;
+    margin: auto;
+    padding: 20px;
+    background: rgba(246, 249, 255, 1);
+    border-radius: 100px;
+	}
+    .second_heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.roh_blueBtn {
+  width: max-content; 
+  margin: auto;
+  background: linear-gradient(103.81deg, #2563EB 0%, #7C3AED 100%);
+  border: none;
+  color: white;
+  padding: clamp(8px, 1.5vw, 12px) clamp(16px, 1.5vw, 24px);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100px;
+  line-height: 1em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.roh_blueBtn:hover {
+  background: linear-gradient(to right, #3b82f6, #4f46e5);
+}
+.roh_blueBtn svg {
+  background: #91acefa6;
+  border-radius: 100px;
+  padding: 4px;
+  transform: rotate(320deg);
+  transition: all 0.3s ease;
+}
+.roh_blueBtn:hover svg {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+    .help_wrap {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+.roh_help_wrap {
+	padding: 30px 10px;
+}
+}

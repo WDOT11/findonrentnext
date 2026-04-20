@@ -1,0 +1,468 @@
+/* frontend/src/app/home.module.css */
+
+/* Hero section */
+.hero_wrap {
+  position: relative;
+  /* margin-top: 70px; */
+}
+
+.hero_section {
+  background-image: url('/images/homepg/bg-img-3.svg');
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.hero_container {
+  padding-top: 140px;
+}
+
+.main_heading {
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+.main_heading h1 {
+  font-size: 36px;
+  color: var(--blackcolor);
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.main_heading h2 {
+  font-size: 23px;
+  color: var(--blackcolor);
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+/* Word animation */
+.cdWordsWrapper {
+  position: relative;
+  overflow: hidden;
+}
+.cdWordsWrapper b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+.cdWordsWrapper b.isVisible {
+  opacity: 1;
+  position: relative;
+}
+
+.cdLetters {
+  display: inline-block;
+  white-space: nowrap;
+}
+.cdLetters i {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: waveIn 0.5s forwards;
+}
+@keyframes waveIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Searchbar */
+.custom_searchbar_wrap {
+  margin-top: 60px;
+  position: relative;
+}
+.custom_searchbar {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  padding: 15px 30px;
+  border-radius: 5px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.location_in_wrap,
+.category_in_wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.location_in_wrap img,
+.category_in_wrap img {
+  width: 25px;
+  height: 25px;
+}
+
+.category_in_wrap select {
+  appearance: none;          /* simple standard property */
+  min-width: 170px;
+  border: none;
+  background-color: #fff;
+}
+
+
+.category_in_wrap select:focus,
+.location_in_wrap input:focus,
+.search_block_inner input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.location_in_wrap input,
+.search_block_inner input {
+  height: 41px;
+  border: none;
+  background-color: #fff;
+}
+
+.search_block_inner {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.whatoftype {
+  position: relative;
+  font-weight: 700;
+}
+.whatoftype::after {
+  position: absolute;
+  content: '';
+  height: 25%;
+  width: 100%;
+  background-color: #edc7a9;
+  bottom: 15%;
+  left: 0;
+  z-index: -1;
+}
+
+/* Search button */
+.rent_search_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rent_search_btn button {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 11px 13px;
+  border-radius: 20px;
+  background: #ff3c00;
+  color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+.rent_search_btn button:hover {
+  background: #000;
+}
+.rent_search_btn button > svg {
+  width: 34px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Borders */
+.border_rightF1,
+.border_rightF2 {
+  border-right: 1px solid #e4e4e4;
+}
+
+.search_block_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bottom section */
+.list_bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+  padding: 0;
+}
+.list_bottom li {
+  list-style: none;
+  padding-inline: 10px;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.list_bottom li:nth-child(2) {
+  border-inline: solid 1px #8e8b8b;
+}
+
+
+/** Products section css start ***/
+/* ===== Section wrapper ===== */
+.fleetswrap_inner {
+  padding-block: 24px 40px;
+}
+
+.fleets_wrap_main {
+  max-width: none;   /* 1280px */
+  width: 100%;
+  margin-inline: 0;
+}
+
+/* small star label row */
+.star_box {
+  margin-bottom: 8px;
+}
+.star_title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #343a40;
+}
+
+/* H3 like in screenshot */
+.second_heading {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #0b1220;
+  margin: 8px 0 0;
+}
+
+/* ===== Card ===== */
+.fleetscard {
+  border: 1px solid #e9eef5;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  background: #fff;
+  height: 100%;
+}
+
+.fleetscard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(16, 24, 40, 0.12);
+}
+
+/* top image area */
+.fleetscard :global(.card-img-top) {
+  height: 220px;              /* adjust if needed */
+  width: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 28px 28px 0 0;
+}
+
+/* card body spacing/typography */
+.fleetscard :global(.card-body) {
+  padding: 18px 20px 16px;
+}
+
+.feets_cardH {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #0b1220;
+  margin: 12px 0 16px;
+}
+
+/* category pill */
+.fleetscard :global(.badge-car) {
+  display: inline-block;
+  background: #f1f3f5;
+  color: #353a40;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* feature rows (icon + label on left, value on right) */
+.fleetscard :global(.feets_data_list) {
+  color: #7a8a9a;              /* muted like screenshot */
+  font-weight: 600;
+  font-size: 16px;
+}
+.fleetscard :global(.feets_data_list img) {
+  width: 20px;
+  height: 20px;
+}
+
+/* divider at bottom of details */
+.fleetscard :global(.border-top) {
+  border-top: 1px solid #e9eef5 !important;
+}
+
+/* price text (left side) */
+.priceStrong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #0b1220;
+}
+.priceMuted {
+  font-size: 16px;
+  font-weight: 600;
+  color: #7a8a9a;
+  margin-left: 6px;
+}
+
+/* circular CTA on right */
+.circl_btn button {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  display: grid;
+  place-items: center;
+  background: #ff4a16;           /* orange */
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(255, 74, 22, .35);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.circl_btn button:hover {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+/* ensure arrow inside button looks white */
+.circl_btn button svg {
+  width: 20px;
+  height: 20px;
+}
+.circl_btn button svg path {
+  fill: #fff;
+}
+
+/* carousel item spacing if you use Owl */
+.fleetswrap_inner :global(.owl-carousel .item) {
+  padding: 12px;
+}
+.fleetswrap_inner :global(.owl-carousel .owl-stage-outer) {
+  padding: 4px;
+}
+
+/* responsive tweaks */
+@media (max-width: 991px) {
+  .second_heading { font-size: 28px; }
+  .fleetscard :global(.card-img-top) { height: 200px; }
+}
+@media (max-width: 575px) {
+  .fleetscard { border-radius: 22px; }
+  .fleetscard :global(.card-img-top) { height: 180px; }
+  .priceStrong { font-size: 24px; }
+}
+
+
+.cardImg { width:100%; height:220px; object-fit:contain; background:#fff; }
+@media (max-width: 991px){ .cardImg{ height:200px; } }
+@media (max-width: 575px){ .cardImg{ height:180px; } }
+
+
+/* CTA link wrapper (Next <Link>) */
+.ctaLink {
+  text-decoration: none;
+  display: inline-grid;      /* size collapse na ho */
+}
+
+/* Round orange CTA button */
+.ctaBtn {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #ff4a16;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(255, 74, 22, 0.35);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+/* Hover/Focus states */
+.ctaBtn:hover,
+.ctaBtn:focus-visible {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+  outline: none;
+}
+
+/* Icon inside */
+.ctaBtn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.ctaBtn svg path {
+  fill: #fff;
+}
+
+/** Products page pagination */
+/* Pagination container */
+.rohproducts_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* General button styling */
+.rohproducts_btn {
+  background-color: #ff3c00; /* Background color */
+  color: #ffffff; /* Text color */
+  padding: 8px 16px;
+  border: 2px solid #ff3c00; /* Border color */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rohproducts_btn:hover {
+  background-color: #000000; /* Black on hover */
+  border: #000000;
+  color: #ffffff; /* Text remains white on hover */
+}
+
+/* Active page button */
+.rohproducts_btn_active {
+  background-color: #000000; /* Black color for active button */
+  color: #ffffff;
+  border: 2px solid #000000; /* Border color to match */
+}
+
+/* Inactive page button */
+.rohproducts_btn_inactive {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 2px solid #dcdfe1;
+}
+
+/* Disabled button */
+.rohproducts_btn:disabled {
+  background-color: #e9ecef;
+  border: 2px solid #dcdfe1;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Page number button */
+.rohproducts_btn_page {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.rohproducts_btn_page:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}

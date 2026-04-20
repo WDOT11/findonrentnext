@@ -1,0 +1,401 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.roh_catTab {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5em;
+  background-color: #ffffff;
+  color: #737b8c;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #eeebe8;
+  user-select: none;
+}
+
+.roh_catTab:hover {
+  background-color: #eeebe8;
+  color: #7c7c7c;
+}
+
+.roh_tabNav_header {
+  position: sticky;
+  top: -1px;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  z-index: 1;
+  padding: 15px;
+  width: 100%;
+  max-width: max-content;
+  margin: auto;
+}
+
+.roh_tabNav_header :global(.nav-link.active),
+.roh_tabNav_header :global(.show > .nav-link) {
+  color: #fff !important;
+  background-color: #FF3600 !important;
+}
+
+.roh_tabNav_header :global(.nav-link):focus-visible {
+  box-shadow: none;
+}
+
+.roh_hostingForm_body {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.roh_brandtab {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5em;
+  background-color: #f9f8f5;
+  color: #7c7c7c;
+  border: 1px solid #eeebe8;
+  user-select: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.roh_brandtab:hover {
+  background-color: #f9f8f5;
+
+}
+
+.roh_brandtab_active {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #FF3600;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.roh_brandtab:focus-visible,
+.roh_brandtab_active:focus-visible {
+  box-shadow: none;
+  outline: none !important;
+}
+
+.roh_additemForm input,
+.roh_additemForm textarea,
+.roh_additemForm select {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: #dbdfeb1f;
+  transition: border-color 0.2s ease;
+}
+
+.roh_additemForm input:focus,
+.roh_additemForm textarea:focus,
+.roh_additemForm select:focus {
+  border: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.roh_additemForm span {
+  color: red;
+}
+
+.roh_additems_uploadImage {
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px dashed #e5e1dc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.roh_additems_uploadImage:hover {
+  border: 2px dashed #ff3600;
+}
+
+.roh_additems_uploadImage .cursor_pointer {
+  cursor: pointer;
+}
+
+.roh_fromBtn {
+  background-color: #FF3600;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.roh_fromBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.roh_fromBtn:focus-visible,
+.roh_fromsaveBtn:focus-visible {
+  outline: none;
+}
+
+.roh_fromsaveBtn {
+  background-color: #e3e3e8;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.roh_fromsaveBtn:hover {
+  background-color: #e3e3e8cc;
+}
+
+.roh_additemsPriview_summary {
+  background-color: #FFF8F6 !important;
+  border-radius: 10px;
+  border: 1px solid #eeebe8;
+}
+
+.roh_deleteBtn_icon {
+  color: #dc3545;
+}
+
+.roh_deleteBtn_icon:hover {
+  color: #a50010;
+}
+
+.text_orange {
+  color: #FF3600;
+}
+
+.roh_additeamsaveBtn_wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.roh_additem_formFooter {
+  padding: 20px 25px 20px 30px;
+  border-radius: 0;
+  background-color: #f7f6f3;
+  position: fixed;
+  bottom: -1px;
+  border-top: 1px solid #ccc;
+  margin: 0 1px;
+  width: 100%;
+  left: -50%;
+  transform: translate(50%, 0px);
+}
+
+.roh_additem_formFooter a {
+  color: #FF3600;
+  text-decoration: none;
+}
+
+.roh_additem_formFooter a:hover {
+  text-decoration: underline;
+}
+
+.roh_backtoHomebtn {
+  color: #FF3600;
+  text-decoration: underline;
+
+}
+
+.roh_backtoHomebtn:hover {
+  text-decoration: underline;
+  color: #e63100;
+
+}
+
+.roh_beacome_host {
+  background-image: url(/images/homepg/bg-img-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 55px 30px 100px 30px;
+}
+
+.roh_additem_formFooter_inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 10px;
+}
+
+.roh_fleetInput_group {
+  padding: 7px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #dbdfeb1f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.roh_fleetInput_group button {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px !important;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow:none;
+  background-color: #fff;
+  color: #000;
+  padding: 0px;
+  transition: all 0.3s;
+}
+
+.roh_fleetInput_group button:hover{
+  background-color: transparent;
+  border:none;
+  color: #FF3600;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.roh_fleetInput_group button:focus,
+.roh_fleetInput_group button:focus-visible, .roh_fleetInput_group button:not(.btn-check)+.btn:active {
+   outline: none;
+  border: none;
+  box-shadow: none;
+  color: #ff3600 !important;
+  background-color: transparent !important;
+ }
+
+.roh_fleetInput_group input, .roh_fleetInput_group input:focus, .roh_fleetInput_group input:focus-visible {
+  padding: 0;
+  font-size: 15px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.roh_summery_list_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+.roh_summeryList_items {
+  font-size: 16px;
+  line-height: 1em;
+}
+.roh_summerycard_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+.roh_summery_imgWrapper {
+  height: 120px;
+}
+.roh_addedItem_wrapper {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+  .roh_summery_list_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+}
+
+@media screen and (max-width:767px) {
+
+  .roh_additemForm input,
+  .roh_additemForm textarea,
+  .roh_additemForm select {
+    font-size: 16px;
+  }
+
+  .roh_additem_formFooter {
+    padding: 20px;
+  }
+  .roh_fleetInput_group {
+    width: 100%;
+    max-width: 100%;
+  }
+  .roh_summeryList_items {
+  font-size: 14px;
+  line-height: 1em;
+}
+.roh_summeryCard_title {
+  font-size: 16px;
+}
+
+}
+@media screen and (max-width:767px) {
+  .roh_hostingForm_body {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width:550px) {
+  .roh_beacome_host {
+    padding: 50px 15px 100px 15px;
+  }
+  .roh_addItems_formWrapper {
+    padding: 10px 0;
+  }
+  .roh_additem_formFooter_inner {
+    gap: 8px;
+  }
+  .roh_additem_formFooter_inner label {
+    font-size: 11px;
+  }
+  .roh_fromBtn, .roh_fromsaveBtn {
+    font-size: 13px;
+    padding: 6px 12px;
+
+  }
+  .roh_additem_formFooter {
+    padding: 10px 15px;
+  }
+  .roh_additems_uploadImage {
+    padding: 10px;
+  }
+  .roh_summerycard_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.roh_summery_imgWrapper {
+  height: 100px;
+}
+.roh_deleteBtn_icon {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+}
+}
+
+
+.roh_error_message {
+  color: #dc3545; /* Bootstrap red color */
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}

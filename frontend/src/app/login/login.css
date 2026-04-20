@@ -1,0 +1,365 @@
+/* Container */
+.rohuserlogn_wrap {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(90px, 13vw, 160px) clamp(10px, 1.5vw, 16px) clamp(30px, 6vw, 70px) clamp(10px, 1.5vw, 16px);
+  background-image: url('/images/homepg/bg-img-3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Card */
+.rohuserlogn_card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+.rohuserlogn_title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.rohuserlogn_subtitle {
+  color: #6b7280;
+  margin-bottom: clamp(10px, 1.5vw, 20px);
+}
+
+/* Alert */
+.rohuserlogn_alert {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+/* Form */
+.rohuserlogn_form {
+  display: grid;
+  gap: 16px;
+  margin-top: clamp(20px, 2.5vw, 50px);
+}
+
+.rohuserlogn_field {
+  display: grid;
+  gap: clamp(4px, 0.5vw, 8px);
+}
+
+.rohuserlogn_label {
+  font-weight: 600;
+  color: #111827;
+}
+
+.rohuserlogn_labelrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rohuserlogn_input {
+  width: 100%;
+  height: 48px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: #dbdfeb1f;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 3px #ffffff;
+}
+
+.rohuserlogn_input:focus {
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+
+/* Row actions */
+.rohuserlogn_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.rohuserlogn_check {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #374151;
+}
+
+.rohuserlogn_checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+/* Buttons */
+.rohuserlogn_btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 100px;
+  background: #ff3c00;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  margin-top: clamp(10px, 1.5vw, 20px);
+}
+
+.rohuserlogn_btn:hover {
+  background-color: #000;
+}
+
+.rohuserlogn_btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.rohuserlogn_btn:active {
+  transform: translateY(1px);
+}
+
+.rohuserlogn_link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rohuserlogn_link:hover {
+  text-decoration: underline;
+}
+
+.rohuserlogn_linkbtn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Divider */
+.rohuserlogn_divider {
+  position: relative;
+  text-align: center;
+  margin: 8px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.rohuserlogn_divider::before,
+.rohuserlogn_divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.rohuserlogn_divider::before {
+  left: 0;
+}
+
+.rohuserlogn_divider::after {
+  right: 0;
+}
+
+/* Social buttons */
+.rohuserlogn_socials {
+  display: grid;
+  gap: 10px;
+  margin-top: -4px;
+}
+
+.rohuserlogn_socialbtn {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer text */
+.rohuserlogn_footer {
+  text-align: center;
+  color: #4b5563;
+  margin-top: 6px;
+}
+
+/* =========================
+   Language Switcher
+========================= */
+
+.languageSwitcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.languageLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.languageSelect {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  min-width: 140px;
+  outline: none;
+}
+
+.languageSelect:hover {
+  border-color: #999;
+}
+
+.languageSelect:focus {
+  border-color: #3b82f6; /* blue focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* =========================
+   Regional Language Message
+========================= */
+
+.rohuserlogn_regionText,
+.rohuserres_regionText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* Register page info text */
+.rohuserres_infoTop {
+  margin: 10px 0 14px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 480px) {
+  .languageSwitcher {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .languageSelect {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  /* .rohuserlogn_wrap {
+    padding: 150px 16px 100px 16px;
+  } */
+
+}
+
+@media (max-width: 640px) {
+  .rohuserlogn_card {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .rohuserlogn_title {
+    font-size: 24px;
+  }
+}
+
+/* Password input wrapper */
+.rohuserlogn_passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure input takes full width and leaves room for icon */
+.rohuserlogn_passwordWrapper .rohuserlogn_input {
+  width: 100%;
+  padding-right: 40px;
+  /* space for eye icon */
+  box-sizing: border-box;
+}
+
+/* Eye button (👁️ / 🙈) styling */
+.rohuserlogn_eyeBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1;
+  padding: 0;
+}
+
+.rohuserlogn_eyeBtn:hover {
+  color: #000;
+}
+
+
+/** Forget Password css */
+.rohuserlogn_fpRow {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.rohuserlogn_fplink {
+  font-size: 14px;
+  color: #ff6b00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.rohuserlogn_fplink:hover {
+  color: #e45f00;
+  text-decoration: underline;
+}
+@media screen and (max-width: 767px) {
+  .rohuserlogn_fpRow {
+  font-size: 12px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+  
+}

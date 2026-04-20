@@ -1,0 +1,82 @@
+.fleetswrap_inner {
+  padding: 96px 20px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #FFF8F6;
+}
+
+
+.roh_container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+
+.roh_seo_links_section {
+  background: #ffff;
+  padding: 40px 40px;
+  max-width: 1280px;
+  border-radius: 15px;
+  margin: 48px auto 0 auto;
+}
+.roh_seo_links_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.roh_seo_links_section h2 {
+  font-size: 24px;
+  color: #000;
+}
+.roh_seo_links_section h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.roh_seo_links_section h2 a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+.roh_seo_links_block a {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4B5563;
+  line-height: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.roh_seo_links_block a:hover {
+  background: #F3F4F6;
+  color: #111827;
+  border-color: #D1D5DB;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  
+  
+  .roh_seo_links_section {
+    padding: 40px 20px;
+    margin-top: 20;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fleetswrap_inner {
+    padding: 30px 10px;
+  }
+  .roh_seo_links_section  {
+    padding: 20px 15px;
+  }
+.roh_seo_links_block a {
+        font-size: 10px;
+        padding: 4px 8px;
+        width: calc(50% - 8px);
+}
+}

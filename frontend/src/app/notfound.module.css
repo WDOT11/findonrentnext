@@ -1,0 +1,15 @@
+.roh_mainWraper404 {
+    background-color: #fff;
+    align-content: center;
+}
+.roh_page404Inner {
+    padding: 100px 0px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .roh_page404Inner {
+    padding: 50px 0px;
+}
+}

@@ -1,0 +1,203 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.speedTestWrapper {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 60px 0;
+  font-family: inherit;
+}
+
+.hero {
+  background: linear-gradient(135deg, #121212 0%, #000000 100%);
+  border-radius: 24px;
+  padding: 100px 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 198, 255, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  color: #888;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.btnPrimary {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  padding: 16px 40px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.sectionTitle p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 100px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 198, 255, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 198, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #00c6ff;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.card p {
+  color: #999;
+  line-height: 1.7;
+}
+
+.howItWorks {
+  padding: 100px 0;
+  background: #050505;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+.stepGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stepItem {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.stepNumber {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  margin-bottom: -40px;
+}
+
+.stepItem h4 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #00c6ff;
+}
+
+.testimonials {
+  margin-bottom: 100px;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.testimonialCard {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  border-left: 4px solid #00c6ff;
+}
+
+.testimonialText {
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonialAuthor {
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+}

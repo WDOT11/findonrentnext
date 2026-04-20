@@ -1,0 +1,274 @@
+.roh_aboutUs_wrapper {
+    padding: 96px 20px;
+    background-color: #FFF8F6;
+    font-family: "DM Sans", sans-serif;
+}
+.circl_btn button {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: none;
+    display: grid;
+    place-items: center;
+    background: #ff4a16;
+    /* orange */
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(255, 74, 22, .35);
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.circl_btn button img {
+    width: 20px;
+    height: 20px;
+}
+
+.circl_btn button img path {
+    fill: #fff;
+}
+
+.star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.egg_img1 .eggimg1,
+.egg_img2 .eggimg2 {
+    max-width: 100%;
+    border-radius: 200px 200px 200px 200px;
+    aspect-ratio: 1 / 1.37;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+}
+
+.about_img_2::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    bottom: 0;
+    left: -8px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c8c8c8;
+    border-radius: 160px;
+    z-index: 1;
+}
+
+.about_img_1::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c8c8c8;
+    border-radius: 200px;
+    z-index: 1;
+}
+
+.egg_img1_wrap {
+    position: relative;
+    width: 64%;
+    left: 50px;
+}
+
+.body_img_egg {
+    position: relative;
+}
+
+.egg_img2_wrap {
+    right: 0px;
+    bottom: 0;
+    position: absolute;
+    max-width: 100%;
+    text-align: center;
+    z-index: 1;
+    width: 55%;
+}
+
+.body_img_egg {
+    padding-bottom: 111px;
+
+}
+
+.roh_redBtns .roh_circl_btn a,
+.roh_redBtns .roh_circl_btn a,
+.roh_redBtns .roh_button_custom a,
+.roh_redBtn a {
+    background: #FF3600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.roh_redBtns .roh_button_custom a:hover {
+    color: #ffff;
+}
+
+.roh_button_custom a,
+.roh_redBtn a,
+.roh_whiteBtn a {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.roh_circl_btn a {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a:hover img,
+.roh_button_custom:hover~.roh_circl_btn a img {
+    transform: rotate(0deg);
+}
+
+.roh_redBtns .roh_circl_btn a:hover,
+.roh_redBtns .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: #000;
+}
+
+.roh_whiteBtns .roh_circl_btn a:hover,
+.roh_whiteBtns .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: #FF3600;
+}
+
+.roh_iconBtn a {
+    background-color: #FF3600;
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.roh_iconBtn a:hover {
+    background-color: #000;
+}
+
+.roh_iconBtn a img {
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.about_media_list li:hover .back_circle::before {
+    opacity: 70%;
+}
+
+.about_media_list {
+    padding: 0px;
+    margin: 30px 0 0;
+}
+
+.about_media_list li {
+    list-style: none;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 15px;
+}
+
+.about_media_list li:last-child {
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.about_media_list li .media {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.media_title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.explore_wrap {
+    margin-top: 90px;
+}
+
+.second_heading {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.2em;
+    color: #0b1220;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .roh_button_custom a,
+    .roh_redBtn a,
+    .roh_whiteBtn a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .roh_circl_btn a img,
+    .roh_iconBtn a img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .second_heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+.roh_aboutUs_wrapper {
+    padding: 48px 15px;
+    background-color: #FFF8F6;
+}
+    .second_heading {
+        font-size: 26px;
+        margin-top: 8px;
+    }
+    .about_media_list li .media {
+        gap: 16px;
+    }
+}

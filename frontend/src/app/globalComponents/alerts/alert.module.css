@@ -1,0 +1,114 @@
+/* Screen overlay */
+.alertOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+}
+
+/* Center alert box */
+.alertBox {
+  background: #16a34a;
+  color: white;
+  padding: 25px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  animation: popIn 0.25s ease-out;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Pop animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Confirmation overlay */
+.confirmOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Confirmation box */
+.confirmBox {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: popIn 0.25s ease-out;
+}
+
+.confirmMessage {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.confirmButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.confirmYes {
+  padding: 10px 20px;
+  background: #16a34a;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmNo {
+  padding: 10px 20px;
+  background: #dc2626;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ERROR alert box */
+.alertBoxError {
+  background: #dc2626;
+  color: white;
+  padding: 25px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  animation: popIn 0.25s ease-out;
+}
+
+.alertBoxSuccess {
+  background: #16a34a;
+  color: white;
+  padding: 25px 40px;
+  border-radius: 12px;
+  font-size: 20px;
+  animation: popIn 0.25s ease-out;
+}

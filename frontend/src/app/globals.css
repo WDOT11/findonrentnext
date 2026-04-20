@@ -1,0 +1,471 @@
+:root {
+    --primary-color: #FF3600;
+    --secondary-color: #000000;
+    --white-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --font-color: #333333;
+    --button-radius: 50px;
+    --transition-duration: 0.3s;
+    /* --font-family-heading: 'Epilogue', sans-serif;;
+    --font-family-body: 'DM Sans', sans-serif; */
+}
+
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: var(--font-family-body);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+/*
+html {
+  scroll-padding-top: 90px;
+} */
+
+:global(html) {
+    scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'Epilogue';
+  src: url('/fonts/epilogue/Epilogue-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('/fonts/epilogue/Epilogue-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/dm-sans/DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/dm-sans/DMSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/dm-sans/DMSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+h2, .roh_section_title_h3 {
+    font-family: var(--font-family-body);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+h3 {
+    font-family: var(--font-family-body);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+h4 {
+    font-family: var(--font-family-body);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+p {
+    font-family: var(--font-family-body);
+    font-size: clamp(14px, 1.5vw, 16px) !important;
+}
+/* .star_box svg {
+    width: 12px;
+    height: 12px;
+} */
+.roh_star_title {
+    color: var(--primary-color);
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 600;
+    font-family: var(--font-family-body);
+}
+select {
+  font-family: "DM Sans", sans-serif;
+  color: #767474;
+  
+  /* iOS Safari fixes */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-fill-color: #767474;
+}
+/* --------------Red Buttons  -----------------  */
+.roh_redBtn a {
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.roh_redBtn a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/* --------------White Buttons  -----------------  */
+.roh_whiteBtn a {
+    background: var(--white-color);
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.roh_whiteBtn a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/* --------------Red Buttons  with Arrow -----------------  */
+
+.roh_redBtns .roh_circl_btn a,
+.roh_redBtns .roh_circl_btn a,
+.roh_redBtns .roh_button_custom a,
+.roh_redBtn a {
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/*------------------ WHite Buttons  with Arrow ----------- */
+
+.roh_whiteBtns .roh_circl_btn a,
+.roh_whiteBtns .roh_button_custom a {
+    background: var(--white-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.roh_button_custom a,
+.roh_redBtn a,
+.roh_whiteBtn a {
+    width: max-content;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.roh_circl_btn a {
+    width: max-content;
+    cursor: pointer;
+    font-family: var(--font-family-body);
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+.roh_circl_btn a svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn a:hover img,
+.roh_button_custom:hover~.roh_circl_btn a img {
+    transform: rotate(0deg);
+}
+.roh_circl_btn a:hover img,
+.roh_button_custom:hover~.roh_circl_btn a svg {
+    transform: rotate(0deg);
+}
+
+.roh_circl_btn a:hover svg,
+.roh_button_custom:hover~.roh_circl_btn a svg {
+    transform: rotate(0deg);
+}
+.roh_redBtns .roh_circl_btn a:hover,
+.roh_redBtns .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: var(--secondary-color);
+}
+
+.roh_whiteBtns .roh_circl_btn a:hover,
+.roh_whiteBtns .roh_button_custom:hover~.roh_circl_btn a {
+    background-color: var(--primary-color);
+}
+
+.roh_iconBtn a {
+    background-color: var(--primary-color);
+    width: max-content;
+    cursor: pointer;
+    font-family: var(--font-family-body);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.roh_iconBtn a:hover {
+    background-color: var(--secondary-color);
+}
+
+.roh_iconBtn a img {
+    width: 30px;
+    height: 30px;
+    transition: all .3s ease-in-out;
+}
+
+/*------------------ Responsive CSS --------------------*/
+.roh_capitalizeText {
+  text-transform: capitalize;
+}
+
+/* ==============================================================
+   Custom Google Translate CSS - Modern UI
+============================================================== */
+/* Hide the Google logo & branding text */
+.goog-logo-link {
+    display: none !important;
+}
+.goog-te-gadget {
+    color: transparent !important;
+    font-size: 0px !important;
+}
+/* Style the Native Dropdown select */
+.goog-te-gadget .goog-te-combo {
+    margin: 0px !important;
+    padding: 11px 15px;
+    width: auto;
+    border-radius: 100px;; 
+    border: 1px solid #e2e8f0;
+    font-family: var(--font-family-body);
+    font-size: 14px;
+    color: #334155;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%201.5L6%206.5L11%201.5%22%20stroke%3D%22%2364748B%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: right 12px center;
+    padding-right: 25px;
+}
+.goog-te-gadget .goog-te-combo:hover,
+.goog-te-gadget .goog-te-combo:focus {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+}
+/* Completely hide the top banner frame */
+iframe.goog-te-banner-frame,
+iframe.goog-te-banner-frame.skiptranslate,
+div.skiptranslate iframe,
+.skiptranslate iframe,
+.goog-te-banner-frame {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+}
+body {
+    top: 0px !important;
+    position: static !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+html {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    top: 0px !important;
+}
+/* Remove annoying highlight and popup on hover over original text */
+#goog-gt-tt, .goog-te-balloon-frame {
+    display: none !important;
+}
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+.skiptranslate.goog-te-gadget .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+}
+#google_translate_element {
+        position: absolute;
+        top: calc(100vh - 80px);
+        right: 10px;
+}
+
+.goog-te-gadget .goog-te-combo {
+    animation: waveRing 2.5s infinite;
+}
+
+@keyframes waveRing {
+
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 54 0 / 5%);
+    }
+
+    50% {
+        box-shadow: 0 0 0 5px rgb(255 54 0 / 10%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(255 54 0 / 20%);
+    }
+
+}
+/*------------------ Responsive CSS --------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2, .roh_section_title_h3{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+/* @media (max-width: 991px) {
+    h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+} */
+@media (max-width: 1199px) and (min-width: 769px) { 
+     .goog-te-gadget .goog-te-combo {
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+}
+@media screen and (max-width:768px) {
+    
+    .roh_button_custom a,
+    .roh_redBtn a,
+    .roh_whiteBtn a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .roh_circl_btn a img,
+    .roh_iconBtn a img {
+        width: 20px;
+        height: 20px;
+    }
+    .roh_circl_btn a svg,
+    .roh_iconBtn a svg {
+        width: 20px;
+        height: 20px;
+    }
+    .goog-te-gadget .goog-te-combo {
+        padding: 6px 12px;
+        font-size: 13px;
+        padding-right: 22px;
+    }
+}
+@media screen and (max-width:767px) {
+h1 {font-size: 32px; margin-bottom: 16px; margin-top: 0;}
+h2, .roh_section_title_h3 {font-size: 26px; margin-bottom: 12px; margin-top: 0;}
+h3 {font-size: 18px; margin-bottom: 10px; margin-top: 0;}
+/* p {font-size: clamp(14px, 1.2vw, 16px);} */
+}
+@media screen and (max-width:550px) {
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #google_translate_element {
+        position: absolute;
+        top: calc(100dvh - 100px);
+        right: 10px;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 320px) {
+    .roh_button_custom a, .roh_redBtn a, .roh_whiteBtn a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .roh_circl_btn a img, .roh_iconBtn a img {
+        width: 18px;
+        height: 18px;
+    }
+     .roh_circl_btn a svg, .roh_iconBtn a svg {
+        width: 18px;
+        height: 18px;
+    }
+
+}

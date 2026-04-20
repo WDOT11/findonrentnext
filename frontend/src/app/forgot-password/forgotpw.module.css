@@ -1,0 +1,130 @@
+.rohfp_container * {
+  font-family: "DM Sans", sans-serif;
+  ;
+}
+
+.rohfp_container {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 180px 16px 100px 16px;
+  background-image: url(/images/homepg/bg-img-3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rohfp_card {
+  width: 100%;
+  max-width: 550px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.rohfp_title {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+.rohfp_subtitle {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+}
+
+.rohfp_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+.rohfp_label {
+  text-align: left;
+  font-weight: 600;
+    color: #111827;
+    line-height: 1em;
+    margin-bottom: 8px;
+}
+
+.rohfp_input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-shadow: 0px 0px 3px #ffffff;
+  transition: 0.3s ease;
+}
+
+.rohfp_input:focus {
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.rohfp_button {
+  width: 100%;
+  height: 48px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #ff3600;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  transition: all .3s ease;
+}
+
+.rohfp_button:hover {
+  background-color: #000;
+}
+
+.rohfp_button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.rohfp_error {
+  color: red;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.rohfp_success {
+  color: green;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.roh_back2login_btn {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4B5563;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.roh_back2login_btn:hover {
+background-color: none;
+color: #ff3600;
+outline: none;
+border: none;
+text-decoration: underline;
+}
+
+
+@media (max-width: 640px) {
+    .rohfp_card {
+        padding: 22px;
+        border-radius: 14px;
+    }
+}

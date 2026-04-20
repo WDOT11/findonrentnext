@@ -1,0 +1,412 @@
+/* Hero Section  */
+.roh_prouct_hero_wrap {
+  margin-top: 86px;
+}
+.roh_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+.roh_prouct_hero_inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 15px;
+}
+
+.roh_prouct_hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  min-height: max-content;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* Image */
+.roh_hero_img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay div */
+.roh_image_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.roh_Zindex {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+.roh_hero_heading h1 {
+  color: #fff;
+  position: relative;
+}
+
+.roh_hero_description {
+  margin-top: 19px;
+}
+
+.roh_hero_description {
+  color: #fff;
+}
+
+.roh_global_heading {
+  font-size: 16px;
+}
+
+ol.roh_ekit_breadcrumb {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: red;
+}
+
+ol.roh_ekit_breadcrumb li:not(.roh_brd_sep) {
+  color: red;
+  padding: 0px 8px 0px 8px;
+  margin: 0px 0px 0px 0px;
+}
+
+li.roh_ekit_breadcrumbs_start a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.roh_separate_icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Hero Section  CSS END */
+
+/* ----------ROH Blog Post Inner ------ */
+
+.roh_blog_post_inner {
+  padding: 48px 20px;
+}
+
+.roh_blog_img {
+  position: relative;
+  overflow: hidden;
+  /* important */
+  cursor: pointer;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  pointer-events: none;
+  width: 120px;
+  height: 120px;
+}
+
+.ripple_effect {
+  animation: rippleDrop 0.6s linear forwards;
+}
+
+@keyframes rippleDrop {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+
+.roh_blog_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.roh_blog_card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.roh_blog_card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.roh_blog_img {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.roh_postFeature_img_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.roh_blog_content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 220px);
+}
+
+.roh_blog_heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.roh_blog_date {
+  font-size: 16px;
+  color: #616161;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roh_blog_excerpt {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.roh_redBtns {
+  gap: 8px;
+}
+
+.roh_redBtns .roh_circl_btn button {
+  background: #FF3600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.roh_button_custom button {
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  color: #FF3600;
+}
+
+.roh_button_custom button:hover {
+  color: #000;
+}
+
+.roh_blog_card:hover .roh_button_custom button {
+  color: #000;
+}
+
+.roh_blog_card:hover .roh_circl_btn button svg {
+  transform: rotate(0deg);
+}
+
+.roh_blog_card:hover:hover .roh_circl_btn button {
+  background-color: #000;
+}
+
+.roh_circl_btn button {
+  width: max-content;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn button svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-30deg);
+  transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn button:hover svg,
+.roh_button_custom:hover~.roh_circl_btn button svg {
+  transform: rotate(0deg);
+}
+
+.roh_redBtns .roh_circl_btn button:hover,
+.roh_redBtns .roh_button_custom:hover~.roh_circl_btn button {
+  background-color: #000;
+}
+
+/* Post Pagination Button Css */
+.roh_paginationNext_btn,
+.roh_paginationPrev_btn {
+  background-color: transparent;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff3600;
+  border-radius: 100px;
+  border: 1px solid #ffcfc3;
+  cursor: pointer;
+  transition: all .3s ease;
+  line-height: 1em;
+}
+
+.roh_paginationNext_btn:hover,
+.roh_paginationPrev_btn:hover {
+  background-color: #FF3600;
+  color: #fff;
+}
+
+.rohproducts_btn_page {
+  font-family: "DM Sans", sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  line-height: 1em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #E5E7EB;
+  line-height: 1em;
+  font-size: 16px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.rohproducts_btn_page:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.rohproducts_btn_active {
+  background-color: #ff3600;
+  color: #fff;
+  border-radius: 100px;
+  border: 1px solid #E5E7EB;
+  cursor: pointer;
+}
+/** Breadcrum */
+.breadcrumbWrap {
+  margin-top: 8px;
+}
+
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.breadcrumbList li {
+  color: #ff3600;
+}
+.breadcrumbList a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumbList a:hover {
+  text-decoration: underline;
+  color: #ff3600;
+}
+
+.breadcrumbList .separator {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+/*-------------- Responsive  Css -------- */
+
+@media screen and (max-width:768px) {
+  .roh_blog_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:767px) {
+  .roh_prouct_hero_wrap {
+    margin-top: 70px;
+  }
+  .roh_prouct_hero_inner {
+    padding-inline: 10px;
+  }
+  .roh_blog_post_inner {
+    padding: 30px 10px;
+  }
+  .roh_blog_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .roh_prouct_hero {
+    padding: 50px 10px;
+  }
+}

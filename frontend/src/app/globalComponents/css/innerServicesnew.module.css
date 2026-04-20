@@ -1,0 +1,379 @@
+.roh_explore_wrap {
+    padding: 96px 20px;
+    background-color: #FFF8F6;
+}
+
+.roh_explore_wrap_main :global(.container) {
+    width: 100%;
+    max-width: 1320px;
+}
+
+.roh_star_title {
+    color: #FF3600;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.roh_second_heading {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.2em;
+}
+
+/* .roh_main_data_wrap {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+/* If i have 5 categories  */
+.roh_main_data_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.roh_card_box {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+/* If I have 5 categories  */
+
+.roh_card_box:nth-child(1),
+.roh_card_box:nth-child(2) {
+    flex: 1 1 48%;
+}
+
+.roh_card_box:nth-child(3) {
+    flex: 1 1 30%;
+}
+
+.roh_card_box:nth-child(4),
+.roh_card_box:nth-child(5) {
+    flex: 1 1 30%;
+}
+
+
+.roh_card_box_inner {
+    border-radius: 24px;
+    border: 1px solid #ECECEC;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.roh_explore_media_list {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1;
+}
+
+.roh_explore_media_list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.roh_explore_media_list li:last-child {
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.roh_explore_media_list li .roh_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.roh_explore_media_list .roh_back_circle {
+    position: relative;
+    padding: 10px;
+    width: 75px;
+}
+
+.roh_explore_media_list .roh_back_circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF3600;
+    opacity: 10%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.roh_explore_media_list .roh_back_circle img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.roh_explore_media_list li {
+    list-style: none;
+}
+
+.roh_media_title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.roh_gray_global_heading {
+    color: #212529;
+}
+
+.roh_global_heading {
+    font-size: 16px;
+}
+
+.roh_explore_media_list .roh_media {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.roh_circl_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.roh_card_box_inner .roh_circl_btn span {
+    background: #FF3600;
+}
+
+.roh_circl_btn span {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.roh_explore_desc {
+    font-size: 16px;
+    text-align: center;
+}
+
+.roh_card_box_inner .roh_circl_btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.roh_circl_btn span svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-30deg);
+    transition: all .3s ease-in-out;
+}
+
+.roh_circl_btn span:hover svg,
+.roh_button_custom:hover~.roh_circl_btn span svg {
+    transform: rotate(0deg);
+}
+
+.roh_top_btns .roh_circl_btn span:hover,
+.roh_top_btns .roh_button_custom span:hover {
+    background: #000;
+    color: #fff;
+}
+
+.roh_top_btns .roh_button_custom span:hover .roh_circl_btn span {
+    background-color: #000;
+}
+
+.roh_top_btns .roh_button_custom span,
+.roh_top_btns .roh_circl_btn span {
+    background: #FF3600;
+    color: #fff;
+}
+
+.roh_button_custom span {
+    width: max-content;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 9px 25px 9px 25px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.roh_card_box_inner:hover .roh_explore_media_list li .roh_back_circle::before {
+    opacity: 100%;
+    background-color: #FF3600;
+}
+
+.roh_card_box_inner:hover .roh_circl_btn span {
+    background: #000;
+    color: #fff;
+    box-shadow: 0px 0px 28px 1px rgb(255 255 255 / 82%);
+}
+
+.roh_card_box_inner:hover .roh_circl_btn span svg,
+.roh_circl_btn span:hover svg {
+    transform: rotate(0deg);
+}
+
+.roh_card_box_inner a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* New Serives box Design  */
+
+
+.roh_main_data_wrap .roh_car_image {
+    height: 100%;
+}
+
+.roh_main_data_wrap .roh_card_image img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 30px 30px 30px 30px;
+    height: 100%;
+    max-height: 400px;
+    transition: transform 0.5s ease;
+}
+
+.roh_card_box:hover .roh_card_image img {
+    transform: scale(1.1);
+}
+
+/* .roh_main_data_wrap .roh_card_image */
+
+.roh_card_box_inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, rgb(255 54 0 / 0%) 0.73%, rgb(3 3 3 / 85%) 90.71%);
+    z-index: 0;
+    transition: transform all .3s ease-in-out;
+}
+
+
+
+
+
+/*--------------- Responsive CSS----------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .roh_second_heading {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* If i have 5 categories  */
+    /* .roh_card_box:nth-child(1)
+    {
+        flex: 1 1 100%;
+    }
+    .roh_card_box:nth-child(2),
+    .roh_card_box:nth-child(3),
+    .roh_card_box:nth-child(4),
+    .roh_card_box:nth-child(5){
+        flex: 1 1 48%;
+    } */
+
+}
+
+@media (max-width: 767px) {
+    .roh_explore_wrap {
+        padding: 30px 10px;
+        background-color: #FFF8F6;
+    }
+
+    .roh_second_heading {
+        font-size: 26px;
+    }
+
+    .roh_button_custom span {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .roh_circl_btn span svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .roh_card_box {
+        flex: 1 1 100% !important;
+    }
+
+    .roh_card_box_inner {
+        height: 240px;
+    }
+
+    .roh_media_title {
+        font-size: 16px;
+    }
+
+    .roh_global_heading {
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .roh_explore_media_list .roh_media {
+        padding: 10px 10px 0 10px;
+        gap: 12px;
+    }
+}
+
+
+@media screen and (min-width:640px) {
+    .roh_main_data_wrap {
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media screen and (max-width:639px) {
+    .roh_main_data_wrap {
+        gap: 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

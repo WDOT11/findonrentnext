@@ -1,0 +1,763 @@
+/* Hero section */
+.hero_wrap {
+  position: relative;
+  /* margin-top: 70px; */
+}
+
+.fleetswrap_inner :global(.container) {
+  width: 100%;
+  max-width: 1320px;
+}
+
+.hero_section {
+  background-image: url('/images/homepg/bg-img-3.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero_container {
+  padding: clamp(80px, 13vw, 160px) 16px clamp(50px, 6vw, 70px) 16px;
+}
+
+.main_heading {
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.main_heading h1 {
+  font-size: 36px;
+  color: var(--blackcolor);
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.main_heading h2 {
+  font-size: 23px;
+  color: var(--blackcolor);
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+/* Word animation */
+.cdWordsWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cdWordsWrapper b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.cdWordsWrapper b.isVisible {
+  opacity: 1;
+  position: relative;
+}
+
+.cdLetters {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cdLetters i {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: waveIn 0.5s forwards;
+}
+
+@keyframes waveIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Searchbar */
+.custom_searchbar_wrap {
+  margin-top: 60px;
+  position: relative;
+}
+
+.custom_searchbar {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 25.16px 0.84px rgba(0, 0, 0, 0.09);
+  padding: 30px 30px;
+  border-radius: 20px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.location_in_wrap,
+.category_in_wrap,
+.search_wraperInput {
+  position: relative;
+}
+
+.category_in_wrap select {
+  appearance: none;
+  /* simple standard property */
+  min-width: 170px;
+  min-height: 48px;
+  padding: 10px 40px 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0f5fa;
+}
+
+
+.category_in_wrap select:focus,
+.location_in_wrap input:focus,
+.search_block_inner input:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px #ff3600;
+}
+
+.location_in_wrap input {
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f5fa;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.loc_block_inner,
+.cat_block_inner,
+.whatoftype {
+  position: relative;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+  width: max-content;
+  font-family: "DM Sans", sans-serif;
+}
+
+.whatoftype::after,
+.loc_block_inner::after,
+.cat_block_inner::after {
+  position: absolute;
+  content: '';
+  height: 8%;
+  width: 100%;
+  background-color: #edc7a9;
+  bottom: 8%;
+  left: 0;
+  z-index: 0;
+}
+
+/* Search button */
+.rent_search_btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.rent_search_btn button {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  background: #2d2d2d;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 700;
+  padding: 13px 20px 13px 25px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.rent_search_btn button:hover {
+  background-color: #FF3600;
+}
+
+.rent_search_btn .roh_search_clearBtn {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background: #a3a9af;
+  color: #fff;
+  border: 1px solid transparent;
+  align-items: center;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  line-height: 1em;
+  align-items: center;
+}
+
+.rent_search_btn .roh_search_clearBtn:hover {
+  background: #7a8a9a;
+}
+
+.rent_search_btn button img {
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rent_search_btn button>img {
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Borders */
+.border_rightF1,
+.border_rightF2 {
+  border-right: 1px solid #e4e4e4;
+}
+
+/* Bottom section */
+.list_bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 50px auto 0px;
+  padding: 10px;
+  border-radius: 50px;
+  width: fit-content;
+  background-color: #fff9;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+.list_bottom li {
+  list-style: none;
+  padding-inline: 25px;
+  color: #6c6c6c;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.list_bottom li:nth-child(2) {
+  border-inline: solid 1px #8e8b8b;
+}
+
+.fleetswrap_inner {
+  padding-block: 48px 20px;
+}
+
+.fleets_wrap_main {
+  max-width: none;
+  width: 100%;
+  margin-inline: 0;
+}
+
+/* small star label row */
+.star_box {
+  margin-bottom: 8px;
+}
+
+.star_title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #343a40;
+}
+
+/* H3 like in screenshot */
+.second_heading {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  color: #0b1220;
+  margin: 8px 0 0;
+}
+
+/* ===== Card ===== */
+.fleetscard {
+  border: 1px solid #e9eef5;
+  border-radius: 20px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  background: #fff;
+  height: 100%;
+  cursor: pointer;
+}
+
+.fleetscard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(16, 24, 40, 0.12);
+}
+
+/* top image area */
+.fleetscard :global(.card-img-top) {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 220px;
+  aspect-ratio: 1/1;
+}
+
+/* card body spacing/typography */
+.fleetscard :global(.card-body) {
+  padding: 0px;
+}
+
+.feets_cardH {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0b1220;
+  line-height: 1.5em;
+  margin: 0px 0px 8px 0px;
+}
+
+/* category pill */
+.fleetscard :global(.badge-car) {
+  display: inline-block;
+  background: #f1f3f5;
+  color: #353a40;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.fleetscard:hover .ctaBtn {
+  background-color: #000;
+
+}
+
+.fleetscard:hover .ctaBtn img {
+  transform: rotate(0deg);
+}
+
+/* feature rows (icon + label on left, value on right) */
+.fleetscard :global(.feets_data_list) {
+  color: #7a8a9a;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.fleetscard :global(.feets_data_list img) {
+  width: 24px;
+  height: auto;
+}
+
+/* divider at bottom of details */
+.fleetscard :global(.border-top) {
+  border-top: 1px solid #e9eef5 !important;
+}
+
+/* price text (left side) */
+.priceStrong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #0b1220;
+}
+
+.priceMuted {
+  font-size: 16px;
+  font-weight: 600;
+  color: #7a8a9a;
+  margin-left: 6px;
+}
+
+/* circular CTA on right */
+.circl_btn button {
+  padding: 5px;
+  border-radius: 999px;
+  border: none;
+  display: grid;
+  place-items: center;
+  background: #ff4a16;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .3s ease;
+}
+
+.circl_btn button:hover {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+/* ensure arrow inside button looks white */
+.circl_btn button img {
+  width: 20px;
+  height: 20px;
+}
+
+.circl_btn button img path {
+  fill: #fff;
+}
+
+/* carousel item spacing if you use Owl */
+.fleetswrap_inner :global(.owl-carousel .item) {
+  padding: 12px;
+}
+
+.fleetswrap_inner :global(.owl-carousel .owl-stage-outer) {
+  padding: 4px;
+}
+
+
+/* CTA link wrapper (Next <Link>) */
+.ctaLink {
+  text-decoration: none;
+  display: inline-grid;
+  /* size collapse na ho */
+}
+
+/* Round orange CTA button */
+.ctaBtn {
+  padding: 5px;
+  border: 0;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #FF3600;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+/* Hover/Focus states */
+.ctaBtn:hover,
+.ctaBtn:focus-visible {
+  transform: translateY(-1px);
+  background: #000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+  outline: none;
+}
+
+/* Icon inside */
+.ctaBtn img {
+  width: 30px;
+  height: auto;
+  display: block;
+  transform: rotate(-30deg);
+  transition: all .3s ease-in-out;
+}
+
+.ctaBtn img:hover {
+  transform: rotate(0deg);
+}
+
+/** Products page pagination */
+/* Pagination container */
+.rohproducts_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* General button styling */
+.rohproducts_btn {
+  background-color: #ff3c00;
+  /* Background color */
+  color: #ffffff;
+  /* Text color */
+  padding: 8px 16px;
+  border: 2px solid #ff3c00;
+  /* Border color */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rohproducts_btn:hover {
+  background-color: #000000;
+  /* Black on hover */
+  border: #000000;
+  color: #ffffff;
+  /* Text remains white on hover */
+}
+
+/* Active page button */
+.rohproducts_btn_active {
+  background-color: #000000;
+  /* Black color for active button */
+  color: #ffffff;
+  border: 2px solid #000000;
+  /* Border color to match */
+}
+
+/* Inactive page button */
+.rohproducts_btn_inactive {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 2px solid #dcdfe1;
+}
+
+/* Disabled button */
+.rohproducts_btn:disabled {
+  background-color: #e9ecef;
+  border: 2px solid #dcdfe1;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Page number button */
+.rohproducts_btn_page {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.rohproducts_btn_page:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Fillter and Search Bar CSS  */
+.roh_filtter_top_bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roh_fiiters {
+  width: 100%;
+  max-width: 32%;
+}
+
+.roh_searchbar_bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roh_searchbar_bottom_fields {
+  width: 100%;
+}
+
+.roh_searchinput_btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.roh_service_searchInput {
+  width: 100%;
+  max-width: 600px;
+}
+
+.search_wraperInput {
+  width: 100%;
+}
+
+.search_wraperInput input {
+  position: relative;
+}
+
+.search_wraperInput input::before {
+  content: '';
+}
+
+.roh_locationInput,
+.roh_catInput,
+.roh_brandInput,
+.roh_searchinput {
+  position: relative;
+}
+.location_in_wrap img{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.category_in_wrap img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search_wraperInput input {
+  padding: 10px 15px 10px 40px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f5fa;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.search_wraperInput img {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.roh_vehicleslisting_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Responsive CSSS */
+@media screen and (max-width: 991px) {
+  .roh_vehicleslisting_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .roh_fiiters {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .border_rightF1,
+  .border_rightF2,
+  .roh_boder_bottumMob {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .fleetscard :global(.card-img-top) {
+    width: 100%;
+    height: 125px;
+  }
+
+  .feets_cardH,
+  .priceStrong {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+
+  .roh_feets_list {
+    font-size: 14px;
+  }
+
+  .fleetscard :global(.feets_data_list),
+  .priceMuted {
+    font-size: 14px;
+  }
+
+  .ctaBtn img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .list_bottom li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom_searchbar {
+    border-radius: 20px;
+  }
+
+  .roh_searchinput_btn_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .roh_vehicleslisting_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .fleetscard {
+    padding: 10px;
+  }
+
+  .roh_fiiters {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .border_rightF1,
+  .border_rightF2 {
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .list_bottom li {
+    font-size: 10px;
+  }
+
+  .custom_searchbar_wrap {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .custom_searchbar {
+    padding: 1rem
+  }
+
+  .main_heading h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fleetscard :global(.card-img-top) {
+    height: 100px;
+  }
+
+  .feets_cardH,
+  .priceStrong {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+
+  .roh_feets_list {
+    font-size: 11px;
+  }
+
+  .fleetscard :global(.feets_data_list),
+  .priceMuted {
+    font-size: 11px;
+  }
+
+  .priceMuted {
+    margin-left: 4px;
+  }
+
+  .fleetscard :global(.feets_data_list img) {
+    width: 18px;
+  }
+
+  .list_bottom li {
+    padding-inline: 8px;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 10px;
+  }
+}
