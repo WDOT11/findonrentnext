@@ -44,7 +44,7 @@ export async function middleware(request) {
   console.log("next server is running.....");
 
   // Run GEO only if NOT admin route
-  if (!isAdminRoute) {
+  if (isAdminRoute) {
 
     let ip = request.headers.get("x-forwarded-for")?.split(",")[0] || request.ip || "UNKNOWN";
 
