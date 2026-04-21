@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "csv-parser": "^3.2.0",
     "dotenv": "^17.0.1",
+    "embla-carousel-react": "^8.6.0",
     "express": "^4.19.2",
     "geoip-lite": "^1.4.10",
     "jodit": "^4.12.2",
